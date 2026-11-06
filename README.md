@@ -47,3 +47,13 @@ This repository is under active preparation. The sample catalog and contribution
 ## Maintainers
 
 Maintained by **Microsoft Developer Relations (Cloud Advocacy)** in partnership with the **Microsoft AI (MAI) team**, and hosted in the [Microsoft Foundry GitHub organization](https://github.com/microsoft-foundry).
+
+## Support and community
+
+See [Support](SUPPORT.md) for sample issues and help. Report security vulnerabilities privately using the instructions in [Security](SECURITY.md), not through public issues.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+The sample code and documentation in this repository are licensed under the [MIT License](LICENSE). The license does not grant access to MAI models or change the terms of your configured model endpoint.
