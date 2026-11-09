@@ -19,6 +19,18 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 | Workshops | Hands-on learning paths with setup instructions and guided exercises. | Coming soon |
 | Reusable assets | Supporting documentation and resources to help you adapt the samples. | Coming soon |
 
+## Access MAI models
+
+**Use MAI in your coding workflow through GitHub Copilot, or integrate MAI into your application through Microsoft Foundry, Azure Speech, or OpenRouter.**
+
+| Developer goal | Where | How to access |
+| --- | --- | --- |
+| Code with MAI | [GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models) | Select an available MAI coding model in Copilot's model picker. Availability depends on your plan, Copilot surface, and organization policies. |
+| Build an app on Azure | [Microsoft Foundry](https://ai.azure.com/) / [Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) | Use your Azure subscription to set up a supported model or service, authenticate, and call its API. Start with the [reasoning](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-thinking), [image](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image), or [voice](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) guide. |
+| Build an app through a unified third-party API | [OpenRouter](https://openrouter.ai/microsoft/) | Create an OpenRouter API key, choose a listed MAI model ID, and follow that model's API guide. |
+
+> Model availability, pricing, and data-handling terms vary by platform. **Copilot access does not provide an API key for your application**, and not every MAI model is available on every platform. Check the linked documentation for current models, regions, preview restrictions, and any additional access requirements.
+
 ## Getting started
 
 Once samples are available:
