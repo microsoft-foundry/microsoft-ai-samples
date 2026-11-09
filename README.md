@@ -2,6 +2,17 @@
   <img src="assets/mai-developer-samples-banner.svg" alt="Microsoft AI (MAI) Developer Samples — Build with MAI models. Learn by doing." width="100%">
 </p>
 
+<p align="center">
+  <a href="https://microsoft.ai/models/mai-image-2-6/"><img src="https://img.shields.io/badge/MAI--Image-2.6-F06B5C?style=flat-square" alt="MAI-Image-2.6" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-voice-2-1/"><img src="https://img.shields.io/badge/MAI--Voice-2.1-5FA463?style=flat-square" alt="MAI-Voice-2.1" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-transcribe-2/"><img src="https://img.shields.io/badge/MAI--Transcribe-2-9B7FD4?style=flat-square" alt="MAI-Transcribe-2" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-code-1-flash/"><img src="https://img.shields.io/badge/MAI--Code-1.1--Flash-72A7FF?style=flat-square" alt="MAI-Code-1.1-Flash" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-cyber-1-1-flash/"><img src="https://img.shields.io/badge/MAI--Cyber-1.1--Flash-E8A0BF?style=flat-square" alt="MAI-Cyber-1.1-Flash" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-thinking-1/"><img src="https://img.shields.io/badge/MAI--Thinking-1-F2B33D?style=flat-square" alt="MAI-Thinking-1" /></a>
+</p>
+
+---
+
 # Microsoft AI (MAI) Developer Samples
 
 Code samples and reusable assets to help you build with **Microsoft AI (MAI) models**.
