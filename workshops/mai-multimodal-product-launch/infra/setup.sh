@@ -82,7 +82,7 @@ set_env FOUNDRY_PROJECT_ENDPOINT "$(output projectEndpoint)"
 if [[ "$DEPLOY_IMAGES" == true ]]; then
   set_env MODEL_IMAGE_HERO "${IMAGE_MODELS[0]}"
   set_env MODEL_IMAGE_BULK "${IMAGE_MODELS[1]}"
-  set_env RATE_LIMIT_RPM 6
+  set_env RATE_LIMIT_RPM 5
 fi
 
 echo
