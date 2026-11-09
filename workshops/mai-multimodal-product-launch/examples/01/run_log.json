@@ -1,0 +1,237 @@
+{
+  "05-launch-poster": {
+    "model": "MAI-Image-2.6",
+    "seconds": 34.1,
+    "size": "1024×1536"
+  },
+  "06-brief-short": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.1,
+    "size": "1024×1280"
+  },
+  "06-brief-medium": {
+    "model": "MAI-Image-2.6",
+    "seconds": 37.1,
+    "size": "1024×1280"
+  },
+  "06-brief-long": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.6,
+    "size": "1024×1280"
+  },
+  "07-ad-english": {
+    "model": "MAI-Image-2.6",
+    "seconds": 26.9,
+    "size": "1024×1024"
+  },
+  "07-ad-spanish": {
+    "model": "MAI-Image-2.6",
+    "seconds": 27.4,
+    "size": "1024×1024"
+  },
+  "07-ad-japanese": {
+    "model": "MAI-Image-2.6",
+    "seconds": 26.2,
+    "size": "1024×1024"
+  },
+  "08-four-seasons": {
+    "model": "MAI-Image-2.6",
+    "seconds": 40.9,
+    "size": "1536×1536"
+  },
+  "09-touch-texture": {
+    "model": "MAI-Image-2.6",
+    "seconds": 27.3,
+    "size": "1024×1024"
+  },
+  "09-touch-reflection": {
+    "model": "MAI-Image-2.6",
+    "seconds": 26.6,
+    "size": "1024×1024"
+  },
+  "09-touch-transparency": {
+    "model": "MAI-Image-2.6",
+    "seconds": 27.4,
+    "size": "1024×1024"
+  },
+  "09-touch-deformation": {
+    "model": "MAI-Image-2.6",
+    "seconds": 28.6,
+    "size": "1024×1024"
+  },
+  "10-clockwork": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.9,
+    "size": "1536×1024"
+  },
+  "11-setup-guide": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.0,
+    "size": "1536×1024"
+  },
+  "12-campsite-before": {
+    "model": "MAI-Image-2.6",
+    "seconds": 30.2,
+    "size": "1536×1024"
+  },
+  "12-edit-1-remove-stranger": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.0,
+    "size": "1248×832"
+  },
+  "12-edit-2-new-price": {
+    "model": "MAI-Image-2.6",
+    "seconds": 29.0,
+    "size": "1248×832"
+  },
+  "12-edit-3-new-color": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.1,
+    "size": "1248×832"
+  },
+  "13-prop-tent": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 12.5,
+    "size": "1024×1024"
+  },
+  "13-prop-stove": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.0,
+    "size": "1024×1024"
+  },
+  "13-prop-backpack": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 23.1,
+    "size": "1024×1024"
+  },
+  "13-prop-sleeping-bag": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.8,
+    "size": "1024×1024"
+  },
+  "13-prop-hiker": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 11.7,
+    "size": "1024×1024"
+  },
+  "13-impossible-photoshoot": {
+    "model": "MAI-Image-2.6",
+    "seconds": 43.3,
+    "size": "1024×1024"
+  },
+  "14-window-no-grounding": {
+    "model": "MAI-Image-2.6",
+    "seconds": 32.3,
+    "size": "1024×1280"
+  },
+  "14-window-grounded": {
+    "model": "MAI-Image-2.6",
+    "seconds": 45.1,
+    "size": "1024×1280"
+  },
+  "15-auto-panorama": {
+    "model": "MAI-Image-2.6",
+    "seconds": 41.1,
+    "size": "1536×1536"
+  },
+  "15-auto-waterfall": {
+    "model": "MAI-Image-2.6",
+    "seconds": 39.1,
+    "size": "1536×1536"
+  },
+  "15-auto-packshot": {
+    "model": "MAI-Image-2.6",
+    "seconds": 39.9,
+    "size": "1536×1536"
+  },
+  "15-web-banner": {
+    "model": "MAI-Image-2.6",
+    "seconds": 40.6,
+    "size": "2304×1024"
+  },
+  "15-phone-story": {
+    "model": "MAI-Image-2.6",
+    "seconds": 39.8,
+    "size": "1152×2048"
+  },
+  "15-just-right": {
+    "model": "MAI-Image-2.6",
+    "seconds": 42.5,
+    "size": "1536×1536"
+  },
+  "16-taste-text-flash": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.7,
+    "size": "1024×1024"
+  },
+  "16-taste-materials-flash": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.5,
+    "size": "1024×1024"
+  },
+  "16-taste-text-hero": {
+    "model": "MAI-Image-2.6",
+    "seconds": 25.9,
+    "size": "1024×1024"
+  },
+  "16-taste-instructions-flash": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.8,
+    "size": "1024×1024"
+  },
+  "16-taste-materials-hero": {
+    "model": "MAI-Image-2.6",
+    "seconds": 27.6,
+    "size": "1024×1024"
+  },
+  "16-taste-portrait-flash": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.9,
+    "size": "1024×1024"
+  },
+  "16-taste-instructions-hero": {
+    "model": "MAI-Image-2.6",
+    "seconds": 29.3,
+    "size": "1024×1024"
+  },
+  "16-taste-portrait-hero": {
+    "model": "MAI-Image-2.6",
+    "seconds": 28.7,
+    "size": "1024×1024"
+  },
+  "16-draft-1": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.4,
+    "size": "1024×1024"
+  },
+  "16-draft-2": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.5,
+    "size": "1024×1024"
+  },
+  "16-draft-3": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.7,
+    "size": "1024×1024"
+  },
+  "16-draft-4": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 13.7,
+    "size": "1024×1024"
+  },
+  "16-draft-6": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.1,
+    "size": "1024×1024"
+  },
+  "16-draft-5": {
+    "model": "MAI-Image-2.6-Flash",
+    "seconds": 14.2,
+    "size": "1024×1024"
+  },
+  "16-final-from-draft-1": {
+    "model": "MAI-Image-2.6",
+    "seconds": 31.0,
+    "size": "1024×1024"
+  }
+}

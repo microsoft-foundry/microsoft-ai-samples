@@ -432,3 +432,7 @@ FodyWeavers.xsd
 
 # Shared Python environment created by .devcontainer/post-create.sh
 .venv/
+
+# Workshop live-run results and local settings
+workshops/*/output/
+.env

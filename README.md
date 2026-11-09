@@ -8,7 +8,14 @@ Code samples and reusable assets to help you build with **Microsoft AI (MAI) mod
 
 Explore practical developer scenarios through runnable code, notebooks, and hands-on workshops. Each sample calls a MAI model deployment to demonstrate model capabilities, with step-by-step setup instructions you can follow, learn from, and adapt for your own projects.
 
-> **Getting started:** We're preparing the first samples. Notebooks, workshops, and other learning resources will be added here as they become available.
+## What's available
+
+| Type | Name | What you'll build | MAI models |
+| --- | --- | --- | --- |
+| Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI-Voice-2.1, MAI-Transcribe-2, MAI-Code Flash |
+| Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
+
+More notebooks and workshops will be added as they become available.
 
 ## Repository structure
 
@@ -23,11 +30,11 @@ Content is organized into three top-level locations:
 
 | Folder | What it contains | Status |
 | --- | --- | --- |
-| [`workshops/`](workshops/) | End-to-end, hands-on learning paths that take you from setup to a working solution, with guided exercises. Each workshop lives in its own subfolder with a README. | Coming soon |
+| [`workshops/`](workshops/) | End-to-end, hands-on learning paths that take you from setup to a working solution, with guided exercises. Each workshop lives in its own subfolder with a README, `requirements.txt` and `infra/` for its Azure resources. | 1 workshop |
 | [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | Coming soon |
-| [`data/`](data/) | Sample datasets and input files used by specific scenarios. Data is grouped by scenario so workshops and notebooks can share it. | Coming soon |
+| [`data/`](data/) | Sample datasets and input files used by specific scenarios. Data is grouped by scenario so workshops and notebooks can share it. | 1 dataset |
 
-The [`assets/`](assets/) folder holds images and other files used by repository documentation.
+The [`assets/`](assets/) folder holds images and other files used by repository documentation. The [`.devcontainer/`](.devcontainer/) sets up Python, Node.js, the Azure CLI and the Azure Developer CLI, and installs every workshop's requirements into a shared `.venv`.
 
 ## Access MAI models
 
@@ -43,12 +50,11 @@ The [`assets/`](assets/) folder holds images and other files used by repository 
 
 ## Getting started
 
-Once samples are available:
-
-1. **Choose a notebook in [`samples/`](samples/) or a workshop in [`workshops/`](workshops/)** that matches what you want to build.
-2. **Follow its README** to install prerequisites and dependencies.
-3. **Configure model access** using your own credentials and the environment variables documented by that sample.
-4. **Run, explore, and adapt** the code for your own project.
+1. **Open the repo in GitHub Codespaces or a VS Code dev container** to get every tool preinstalled.
+2. **Choose a notebook in [`samples/`](samples/) or a workshop in [`workshops/`](workshops/)** that matches what you want to build.
+3. **Follow its README** to install prerequisites and dependencies.
+4. **Configure model access** using your own credentials and the environment variables documented by that sample.
+5. **Run, explore, and adapt** the code for your own project.
 
 Requirements, supported models, endpoint configuration, and environment variable names will be documented per sample. Access to a model deployment is required; any usage charges depend on your endpoint provider and account.
 

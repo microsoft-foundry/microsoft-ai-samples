@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { products } from '../data/products.js';
+const featured = products.find((product) => product.slug === 'trailmaster-x4-tent');
+const categories = [
+  { title: 'Tents', products: products.filter((product) => product.category === 'Tents'), viewAll: '/tents' },
+  { title: 'Packs', products: products.filter((product) => product.category === 'Backpacks'), viewAll: '/products/adventurer-pro-backpack' },
+  { title: 'Stoves', products: products.filter((product) => product.category === 'Camping Stoves'), viewAll: '/products/ecofire-camping-stove' }
+];
+---
+<BaseLayout title="Contoso Outdoors">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Contoso Outdoors</p>
+      <h1>Gear for the way outside</h1>
+      <p>See the new TrailMaster X4 launch.</p>
+      <a class="primary-link" href="/launch">View the launch</a>
+      <a class="secondary-link" href="/tents">Browse tents</a>
+    </div>
+    {featured && <img src={featured.image} alt={featured.name} />}
+  </section>
+
+  <div class="category-carousels">
+    {categories.map((category) => (
+      <section class="category-carousel" aria-labelledby={`heading-${category.title.toLowerCase()}`}>
+        <div class="carousel-heading">
+          <div>
+            <p class="carousel-kicker">Contoso Outdoors</p>
+            <h2 id={`heading-${category.title.toLowerCase()}`}>{category.title}</h2>
+          </div>
+          <div class="carousel-actions" aria-label={`${category.title} carousel controls`}>
+            <button type="button" class="carousel-button prev" aria-label={`Scroll ${category.title} left`}>←</button>
+            <button type="button" class="carousel-button next" aria-label={`Scroll ${category.title} right`}>→</button>
+          </div>
+        </div>
+        <div class="carousel-track" tabindex="0" aria-label={`${category.title} products`}>
+          {category.products.map((product) => (
+            <a class="carousel-card" href={`/products/${product.slug}`}>
+              <img src={product.image} alt={product.name} loading="lazy" />
+              <div class="card-copy">
+                <strong>{product.name}</strong>
+                <span>{product.brand}</span>
+                <b>${product.price}</b>
+              </div>
+            </a>
+          ))}
+        </div>
+        <a class="view-category" href={category.viewAll}>View {category.title.toLowerCase()}</a>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.category-carousel').forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-track');
+    const previous = carousel.querySelector('.carousel-button.prev');
+    const next = carousel.querySelector('.carousel-button.next');
+    const scrollAmount = () => track.clientWidth;
+    previous?.addEventListener('click', () => track.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
+    next?.addEventListener('click', () => track.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
+  });
+</script>
+
+<style>
+  .hero { min-height: 360px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; border: 1px solid var(--line); border-radius: 8px; padding: 32px; background: var(--surface-raised); box-shadow: var(--shadow); }
+  .hero img { width: 100%; height: 290px; object-fit: contain; }
+  h1 { margin: 8px 0 24px; max-width: 420px; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 0.98; }
+  .eyebrow { margin: 0; color: var(--accent); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; }
+  .primary-link, .secondary-link { display: inline-block; border: 1px solid var(--accent); border-radius: 6px; padding: 10px 16px; text-decoration: none; font-weight: 700; }
+  .primary-link { background: var(--accent); color: var(--accent-contrast); }
+  .primary-link:hover { background: var(--accent-hover); }
+  .secondary-link { margin-left: 8px; }
+  .category-carousels { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+  .category-carousel { min-width: 0; width: 100%; display: block; border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: var(--surface-raised); box-shadow: var(--shadow); overflow: hidden; }
+  .carousel-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+  .carousel-heading h2 { margin: 2px 0 0; font-size: 2rem; }
+  .carousel-kicker { margin: 0; color: var(--accent); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; }
+  .carousel-actions { display: flex; gap: 8px; }
+  .carousel-button { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: 1.15rem; cursor: pointer; }
+  .carousel-button:hover { border-color: var(--accent); color: var(--accent); }
+  .carousel-track { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 14px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; scroll-snap-type: inline mandatory; scroll-padding-inline: 2px; scrollbar-width: none; }
+  .carousel-track::-webkit-scrollbar { display: none; }
+  .carousel-track .carousel-card { flex: 0 0 100%; }
+  .carousel-track:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+  .carousel-card { position: relative; min-height: 360px; display: block; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); scroll-snap-align: start; text-decoration: none; overflow: hidden; isolation: isolate; }
+  .carousel-card::after { content: ""; position: absolute; inset: 42% 0 0; z-index: 1; background: linear-gradient(to bottom, transparent, rgba(0, 21, 36, 0.88)); pointer-events: none; }
+  .carousel-card:hover { border-color: var(--accent); }
+  .carousel-card img { width: 100%; height: 360px; object-fit: cover; }
+  .card-copy { position: absolute; inset: auto 0 0; z-index: 2; display: grid; gap: 5px; align-content: end; color: #ffecd1; padding: 18px; }
+  .card-copy strong { font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; text-wrap: balance; }
+  .card-copy span { font-size: 0.88rem; }
+  .card-copy b { font-size: 1rem; }
+  .view-category { width: 100%; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; margin-top: 12px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--accent-contrast); font-weight: 800; text-decoration: none; }
+  .view-category:hover { background: var(--accent-hover); color: var(--papaya-whip); }
+  @media (max-width: 900px) { .category-carousels { grid-template-columns: 1fr; gap: 20px; } }
+  @media (max-width: 700px) { .hero { grid-template-columns: 1fr; } .hero img { height: 220px; } .carousel-heading h2 { font-size: 1.65rem; } }
+</style>
