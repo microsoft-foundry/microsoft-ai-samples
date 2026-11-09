@@ -10,14 +10,24 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 
 > **Getting started:** We're preparing the first samples. Notebooks, workshops, and other learning resources will be added here as they become available.
 
-## What you'll find
+## Repository structure
 
-| Resource | What to expect | Status |
+Content is organized into three top-level locations:
+
+```text
+.
+├── workshops/   # End-to-end workshops
+├── samples/     # Notebook samples
+└── data/        # Scenario-specific data
+```
+
+| Folder | What it contains | Status |
 | --- | --- | --- |
-| Notebook samples | Guided, interactive examples for exploring MAI models and practical use cases. | Coming soon |
-| Code samples | Runnable examples that demonstrate how to integrate MAI models into applications. | Coming soon |
-| Workshops | Hands-on learning paths with setup instructions and guided exercises. | Coming soon |
-| Reusable assets | Supporting documentation and resources to help you adapt the samples. | Coming soon |
+| [`workshops/`](workshops/) | End-to-end, hands-on learning paths that take you from setup to a working solution, with guided exercises. Each workshop lives in its own subfolder with a README. | Coming soon |
+| [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | Coming soon |
+| [`data/`](data/) | Sample datasets and input files used by specific scenarios. Data is grouped by scenario so workshops and notebooks can share it. | Coming soon |
+
+The [`assets/`](assets/) folder holds images and other files used by repository documentation.
 
 ## Access MAI models
 
@@ -35,7 +45,7 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 
 Once samples are available:
 
-1. **Choose a sample or workshop** that matches what you want to build.
+1. **Choose a notebook in [`samples/`](samples/) or a workshop in [`workshops/`](workshops/)** that matches what you want to build.
 2. **Follow its README** to install prerequisites and dependencies.
 3. **Configure model access** using your own credentials and the environment variables documented by that sample.
 4. **Run, explore, and adapt** the code for your own project.
