@@ -426,3 +426,13 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Local scratch space - never committed
+.DO-NOT-COMMIT/
+
+# Shared Python environment created by .devcontainer/post-create.sh
+.venv/
+
+# Workshop live-run results and local settings
+workshops/*/output/
+.env

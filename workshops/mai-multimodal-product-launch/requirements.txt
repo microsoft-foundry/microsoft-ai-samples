@@ -1,0 +1,8 @@
+# Installed into the repo's shared .venv by .devcontainer/post-create.sh.
+# Outside the dev container: .venv/bin/python -m pip install -r workshops/mai-multimodal-product-launch/requirements.txt
+ipykernel>=6.29.0
+python-dotenv>=1.0.0
+azure-identity>=1.19.0
+requests>=2.32.0
+Pillow>=11.0.0
+azure-cognitiveservices-speech>=1.53.0

@@ -1,0 +1,201 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { products } from '../data/products.js';
+const tents = products.filter((product) => product.category === 'Tents');
+const seasons = [...new Set(tents.map((product) => product.season))];
+---
+<BaseLayout title="All tents | Contoso Outdoors">
+  <h1>All tents</h1>
+  <form class="filters" aria-label="Filter tents">
+    <fieldset>
+      <legend>Price</legend>
+      <div class="segmented-options">
+        <input type="radio" name="price-filter" id="price-all" value="all" checked />
+        <label for="price-all">All prices</label>
+        <input type="radio" name="price-filter" id="price-250" value="250" />
+        <label for="price-250">$250 or less</label>
+        <input type="radio" name="price-filter" id="price-350" value="350" />
+        <label for="price-350">$350 or less</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Season</legend>
+      <div class="segmented-options">
+        <input type="radio" name="season-filter" id="season-all" value="all" checked />
+        <label for="season-all">All seasons</label>
+        {seasons.map((season, index) => (
+          <>
+            <input type="radio" name="season-filter" id={`season-${index}`} value={season} />
+            <label for={`season-${index}`}>{season}</label>
+          </>
+        ))}
+      </div>
+    </fieldset>
+  </form>
+  <section class="tents-carousel" aria-label="Tent product carousel">
+    <div class="carousel-heading">
+      <p id="tent-result-count">{tents.length} tents</p>
+      <div class="carousel-actions" aria-label="Tent carousel controls">
+        <button type="button" class="carousel-button prev" aria-label="Show previous tent">←</button>
+        <button type="button" class="carousel-button next" aria-label="Show next tent">→</button>
+      </div>
+    </div>
+    <div class="tent-track" tabindex="0" aria-live="polite">
+      {tents.map((product, index) => (
+        <button
+          type="button"
+          class:list={['tent-card', { selected: index === 0 }]}
+          data-slug={product.slug}
+          data-name={product.name}
+          data-brand={product.brand}
+          data-price={product.price}
+          data-season={product.season}
+          data-category={product.category}
+          data-image={product.image}
+          data-features={JSON.stringify(product.features)}
+          aria-pressed={index === 0 ? 'true' : 'false'}
+        >
+          <img src={product.image} alt="" />
+          <span class="card-copy">
+            <strong>{product.name}</strong>
+            <span>{product.brand}</span>
+            <b>${product.price}</b>
+          </span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <section class="tent-details" aria-labelledby="tent-details-name" aria-live="polite">
+    <div class="detail-image-wrap">
+      <img id="tent-details-image" src={tents[0].image} alt={tents[0].name} />
+    </div>
+    <div class="detail-copy">
+      <p id="tent-details-brand" class="detail-brand">{tents[0].brand}</p>
+      <h2 id="tent-details-name">{tents[0].name}</h2>
+      <strong id="tent-details-price" class="detail-price">${tents[0].price}</strong>
+      <p id="tent-details-meta" class="detail-meta">{tents[0].season}</p>
+      <h3>Features</h3>
+      <ul id="tent-details-features">
+        {tents[0].features.map((feature) => <li>{feature}</li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const priceFilter = document.querySelector('input[name="price-filter"]:checked');
+  const seasonFilter = document.querySelector('input[name="season-filter"]:checked');
+  const track = document.querySelector('.tent-track');
+  const cards = [...document.querySelectorAll('.tent-card')];
+  const previous = document.querySelector('.carousel-button.prev');
+  const next = document.querySelector('.carousel-button.next');
+  const resultCount = document.querySelector('#tent-result-count');
+
+  const detailName = document.querySelector('#tent-details-name');
+  const detailBrand = document.querySelector('#tent-details-brand');
+  const detailPrice = document.querySelector('#tent-details-price');
+  const detailMeta = document.querySelector('#tent-details-meta');
+  const detailImage = document.querySelector('#tent-details-image');
+  const detailFeatures = document.querySelector('#tent-details-features');
+
+  function visibleCards() {
+    return cards.filter((card) => !card.hidden);
+  }
+
+  function selectCard(card, scroll = false) {
+    cards.forEach((item) => {
+      item.classList.remove('selected');
+      item.setAttribute('aria-pressed', 'false');
+    });
+    card.classList.add('selected');
+    card.setAttribute('aria-pressed', 'true');
+
+    detailName.textContent = card.dataset.name;
+    detailBrand.textContent = card.dataset.brand;
+    detailPrice.textContent = `$${card.dataset.price}`;
+    detailMeta.textContent = card.dataset.season;
+    detailImage.src = card.dataset.image;
+    detailImage.alt = card.dataset.name;
+    detailFeatures.replaceChildren(...JSON.parse(card.dataset.features).map((feature) => {
+      const item = document.createElement('li');
+      item.textContent = feature;
+      return item;
+    }));
+
+    if (scroll) card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  function filterCatalog() {
+    const priceValue = document.querySelector('input[name="price-filter"]:checked')?.value || 'all';
+    const seasonValue = document.querySelector('input[name="season-filter"]:checked')?.value || 'all';
+    cards.forEach((card) => {
+      const matchesPrice = priceValue === 'all' || Number(card.dataset.price) <= Number(priceValue);
+      const matchesSeason = seasonValue === 'all' || card.dataset.season === seasonValue;
+      card.hidden = !(matchesPrice && matchesSeason);
+    });
+
+    const visible = visibleCards();
+    if (resultCount) resultCount.textContent = `${visible.length} ${visible.length === 1 ? 'tent' : 'tents'}`;
+    if (visible.length) {
+      const selected = visible.find((card) => card.classList.contains('selected')) || visible[0];
+      selectCard(selected, true);
+    } else {
+      if (resultCount) resultCount.textContent = '0 tents';
+      detailName.textContent = 'No tents match these filters';
+      detailBrand.textContent = '';
+      detailPrice.textContent = '';
+      detailMeta.textContent = '';
+      detailFeatures.replaceChildren();
+      detailImage.removeAttribute('src');
+      detailImage.alt = '';
+    }
+  }
+
+  cards.forEach((card) => card.addEventListener('click', () => selectCard(card, true)));
+  document.querySelectorAll('input[name="price-filter"], input[name="season-filter"]')
+    .forEach((filter) => filter.addEventListener('change', filterCatalog));
+  previous?.addEventListener('click', () => track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' }));
+  next?.addEventListener('click', () => track.scrollBy({ left: track.clientWidth, behavior: 'smooth' }));
+</script>
+
+<style>
+  h1 { margin-top: 0; }
+  .filters { display: grid; grid-template-columns: auto auto; gap: 20px; border: 0; border-radius: 0; padding: 0; background: transparent; }
+  .filters fieldset { min-width: 0; margin: 0; border: 0; padding: 0; }
+  .filters legend { margin-bottom: 8px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; }
+  .segmented-options { display: flex; align-items: stretch; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); padding: 4px; }
+  .segmented-options input { position: absolute; opacity: 0; pointer-events: none; }
+  .segmented-options label { min-height: 38px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 8px 12px; color: var(--muted); font-size: 0.88rem; font-weight: 800; cursor: pointer; white-space: nowrap; }
+  .segmented-options input:checked + label { background: var(--vivid-tangerine); color: var(--ink-black); box-shadow: 0 3px 10px rgba(255, 125, 0, 0.24); }
+  .segmented-options input:focus-visible + label { outline: 3px solid var(--papaya-whip); outline-offset: 2px; box-shadow: 0 0 0 4px var(--stormy-teal); }
+  .tents-carousel { margin-top: 24px; border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: var(--surface-raised); box-shadow: var(--shadow); }
+  .carousel-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .carousel-heading p { margin: 0; color: var(--muted); font-weight: 700; }
+  .carousel-actions { display: flex; gap: 8px; }
+  .carousel-button { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: 1.15rem; cursor: pointer; }
+  .carousel-button:hover { border-color: var(--accent); color: var(--accent); }
+  .tent-track { width: 100%; display: flex; gap: 14px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; scroll-snap-type: inline mandatory; scrollbar-width: none; }
+  .tent-track::-webkit-scrollbar { display: none; }
+  .tent-track:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+  .tent-card { position: relative; flex: 0 0 100%; min-height: 390px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); padding: 0; scroll-snap-align: start; overflow: hidden; cursor: pointer; isolation: isolate; }
+  .tent-card::after { content: ""; position: absolute; inset: 42% 0 0; z-index: 1; background: linear-gradient(to bottom, transparent, rgba(0, 21, 36, 0.88)); pointer-events: none; }
+  .tent-card:hover { border-color: var(--accent); }
+  .tent-card.selected { border: 3px solid var(--vivid-tangerine); }
+  .tent-card[hidden] { display: none; }
+  .tent-card img { width: 100%; height: 390px; object-fit: cover; }
+  .card-copy { position: absolute; inset: auto 0 0; z-index: 2; display: grid; gap: 5px; text-align: left; color: var(--papaya-whip); padding: 20px; }
+  .card-copy strong { font-family: "Fraunces", Georgia, serif; font-size: 1.35rem; }
+  .card-copy span { font-size: 0.9rem; }
+  .card-copy b { font-size: 1.05rem; }
+  .tent-details { min-height: 340px; display: grid; grid-template-columns: minmax(260px, 0.8fr) 1.2fr; gap: 32px; margin-top: 24px; border: 1px solid var(--line); border-radius: 8px; padding: 24px; background: var(--surface-raised); box-shadow: var(--shadow); }
+  .detail-image-wrap { min-height: 300px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); overflow: hidden; }
+  .detail-image-wrap img { width: 100%; height: 100%; min-height: 300px; object-fit: cover; }
+  .detail-brand { margin: 0; color: var(--accent); font-weight: 800; text-transform: uppercase; }
+  .detail-copy h2 { margin: 5px 0 8px; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1; }
+  .detail-price { font-size: 1.5rem; }
+  .detail-meta { margin: 6px 0 18px; color: var(--muted); }
+  .detail-copy h3 { margin: 0 0 8px; font-family: "DM Sans", sans-serif; font-size: 1rem; }
+  .detail-copy ul { margin: 0; padding-left: 20px; line-height: 1.55; }
+  @media (max-width: 700px) { .filters { grid-template-columns: 1fr; gap: 14px; } .segmented-options { width: 100%; overflow-x: auto; border-radius: 8px; } .segmented-options label { flex: 1 0 auto; } .tent-card, .tent-card img { min-height: 320px; height: 320px; } .tent-details { grid-template-columns: 1fr; gap: 20px; } }
+</style>
