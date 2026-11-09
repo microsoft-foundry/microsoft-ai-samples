@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="One Microsoft Foundry resource, three doors. Your code signs in with a keyless Microsoft Entra token. Door 1: the MAI image API at the services.ai.azure.com address, for MAI-Image-2.6 and Flash deployments. Door 2: the Speech SDK at the cognitiveservices.azure.com address, for MAI-Voice-2.1 and Flash, chosen in SSML. Door 3: the Speech transcription REST API, for MAI-Transcribe-2, chosen in the request definition. Outside your resource: MAI-Code-1.1-Flash in GitHub Copilot, MAI-Thinking-1 in the Foundry catalog, and MAI-Cyber-1.1-Flash through MDASH.">
+  <title>One Foundry resource, three doors</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#172b46"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#72a7ff"/>
+      <stop offset="1" stop-color="#83ebcf"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#a8c9ff"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="600" rx="24" fill="url(#bg)"/>
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <text x="48" y="56" font-size="15" font-weight="700" letter-spacing="3" fill="#a8c9ff">THE MENTAL MODEL</text>
+    <text x="48" y="92" font-size="30" font-weight="800" fill="#fff">One Foundry resource, three doors</text>
+
+    <!-- your code -->
+    <rect x="48" y="200" width="230" height="200" rx="16" fill="#fff" fill-opacity="0.06" stroke="#a8c9ff" stroke-opacity="0.5"/>
+    <text x="163" y="236" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">Your code</text>
+    <text x="163" y="268" font-size="14" fill="#d0dfef" text-anchor="middle">notebook · app · agent</text>
+    <rect x="70" y="292" width="186" height="84" rx="10" fill="#83ebcf" fill-opacity="0.14" stroke="#83ebcf" stroke-opacity="0.6"/>
+    <text x="163" y="318" font-size="14" font-weight="700" fill="#83ebcf" text-anchor="middle">🔑 Keyless sign-in</text>
+    <text x="163" y="341" font-size="12" fill="#d0dfef" text-anchor="middle">DefaultAzureCredential</text>
+    <text x="163" y="360" font-size="12" fill="#d0dfef" text-anchor="middle">+ Foundry User role</text>
+
+    <!-- foundry resource -->
+    <rect x="330" y="130" width="250" height="340" rx="18" fill="#72a7ff" fill-opacity="0.12" stroke="#72a7ff" stroke-opacity="0.7"/>
+    <text x="455" y="170" font-size="19" font-weight="700" fill="#fff" text-anchor="middle">Microsoft Foundry</text>
+    <text x="455" y="194" font-size="19" font-weight="700" fill="#fff" text-anchor="middle">resource</text>
+    <text x="455" y="226" font-size="13" fill="#d0dfef" text-anchor="middle">one subdomain, two addresses:</text>
+    <text x="455" y="256" font-size="12" fill="#a8c9ff" text-anchor="middle">&lt;name&gt;.services.ai.azure.com</text>
+    <text x="455" y="280" font-size="12" fill="#a8c9ff" text-anchor="middle">&lt;name&gt;.cognitiveservices.azure.com</text>
+    <line x1="360" y1="306" x2="550" y2="306" stroke="#a8c9ff" stroke-opacity="0.3"/>
+    <text x="455" y="336" font-size="13" fill="#d0dfef" text-anchor="middle">Deploy: image models</text>
+    <text x="455" y="360" font-size="13" fill="#d0dfef" text-anchor="middle">Built in: voice + transcribe</text>
+    <text x="455" y="396" font-size="12" fill="#d0dfef" fill-opacity="0.8" text-anchor="middle">infra/main.bicep creates it</text>
+    <text x="455" y="418" font-size="12" fill="#d0dfef" fill-opacity="0.8" text-anchor="middle">Region: eastus has all three</text>
+
+    <line x1="278" y1="300" x2="326" y2="300" stroke="#a8c9ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- door 1 -->
+    <rect x="650" y="130" width="500" height="100" rx="14" fill="#F06B5C" fill-opacity="0.14" stroke="#F06B5C" stroke-opacity="0.7"/>
+    <text x="672" y="160" font-size="17" font-weight="700" fill="#fff">① Images · MAI-Image-2.6 / Flash</text>
+    <text x="672" y="185" font-size="13" fill="#d0dfef">REST · POST /mai/v1/images/generations · /edits</text>
+    <text x="672" y="207" font-size="13" fill="#d0dfef">model = your deployment name · JSON or form + 1–5 images</text>
+
+    <!-- door 2 -->
+    <rect x="650" y="250" width="500" height="100" rx="14" fill="#5FA463" fill-opacity="0.16" stroke="#5FA463" stroke-opacity="0.8"/>
+    <text x="672" y="280" font-size="17" font-weight="700" fill="#fff">② Voice · MAI-Voice-2.1 / Flash</text>
+    <text x="672" y="305" font-size="13" fill="#d0dfef">Speech SDK · SSML · nothing to deploy</text>
+    <text x="672" y="327" font-size="13" fill="#d0dfef">&lt;voice name="en-US-Harper:MAI-Voice-2.1"&gt;</text>
+
+    <!-- door 3 -->
+    <rect x="650" y="370" width="500" height="100" rx="14" fill="#9B7FD4" fill-opacity="0.16" stroke="#9B7FD4" stroke-opacity="0.8"/>
+    <text x="672" y="400" font-size="17" font-weight="700" fill="#fff">③ Transcribe · MAI-Transcribe-2</text>
+    <text x="672" y="425" font-size="13" fill="#d0dfef">REST · POST /speechtotext/transcriptions:transcribe</text>
+    <text x="672" y="447" font-size="13" fill="#d0dfef">definition.enhancedMode.model = "MAI-Transcribe-2"</text>
+
+    <line x1="580" y1="180" x2="646" y2="180" stroke="#a8c9ff" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="580" y1="300" x2="646" y2="300" stroke="#a8c9ff" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="580" y1="420" x2="646" y2="420" stroke="#a8c9ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- outside -->
+    <text x="48" y="520" font-size="14" font-weight="700" letter-spacing="2" fill="#a8c9ff">OUTSIDE YOUR RESOURCE</text>
+    <rect x="48" y="534" width="350" height="44" rx="10" fill="#72A7FF" fill-opacity="0.14" stroke="#72A7FF" stroke-opacity="0.6"/>
+    <text x="64" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Code-1.1-Flash</tspan> · GitHub Copilot</text>
+    <rect x="420" y="534" width="350" height="44" rx="10" fill="#F2B33D" fill-opacity="0.14" stroke="#F2B33D" stroke-opacity="0.6"/>
+    <text x="436" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Thinking-1</tspan> · Foundry (preview)</text>
+    <rect x="792" y="534" width="358" height="44" rx="10" fill="#E8A0BF" fill-opacity="0.14" stroke="#E8A0BF" stroke-opacity="0.6"/>
+    <text x="808" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Cyber-1.1-Flash</tspan> · MDASH only</text>
+  </g>
+  <rect x="48" y="104" width="64" height="4" rx="2" fill="url(#accent)"/>
+</svg>

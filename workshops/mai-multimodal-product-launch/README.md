@@ -21,8 +21,9 @@ Each notebook gives one job to one MAI model family, and answers the questions a
 | 02 | [Give it a voice](./02-give-it-a-voice.ipynb) | How can MAI-Voice-2.1 models give a launch its voice? | MAI-Voice-2.1, MAI-Voice-2.1-Flash |
 | 03 | [Hear your customers](./03-hear-your-customers.ipynb) | How can MAI-Transcribe-2 turn launch audio into answers? | MAI-Transcribe-2 |
 | 04 | [Refresh the storefront](./04-refresh-the-storefront.ipynb) | Can a coding model turn our napkin sketch into a website? | The latest MAI-Code-X.Y-Flash in GitHub Copilot (may be in preview) |
+| 99 | [Learner guide](./99-learner-guide.ipynb) | How do you build with MAI models, step by step? | All six MAI models: a reference manual with request templates and a debugging playbook. Runs without Azure |
 
-Each one stands alone, but they tell one story in order: the pictures from 01 become the radio ad in 02, the ad is checked in 03, and 04 puts it all on the new launch page.
+Each one stands alone, but they tell one story in order: the pictures from 01 become the radio ad in 02, the ad is checked in 03, and 04 puts it all on the new launch page. Keep 99 open beside them as your manual.
 
 <br/>
 
