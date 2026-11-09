@@ -21,8 +21,8 @@ param deployImageModels bool = true
 
 @description('Image model deployments. Capacity is requests per minute for these models.')
 param imageModels array = [
-  { name: 'MAI-Image-2.6', version: '2026-07-31', capacity: 6 }
-  { name: 'MAI-Image-2.6-Flash', version: '2026-07-31', capacity: 6 }
+  { name: 'MAI-Image-2.6', version: '2026-07-31', capacity: 5 }
+  { name: 'MAI-Image-2.6-Flash', version: '2026-07-31', capacity: 5 }
 ]
 
 var suffix = uniqueString(resourceGroup().id, namePrefix)

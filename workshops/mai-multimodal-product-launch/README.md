@@ -54,11 +54,13 @@ python3 -m venv .venv
 ## Run it live
 
 1. **Sign in.** `az login --use-device-code`
-2. **Deploy.** From this folder, run `bash infra/setup.sh`. It:
-   - checks that your region offers the MAI image models, and skips them with a warning if not,
-   - creates a resource group with a Microsoft Foundry resource and project,
-   - deploys **MAI-Image-2.6** and **MAI-Image-2.6-Flash**, and gives you the **Foundry User** role,
-   - writes this folder's `.env` with the endpoint and deployment names.
+2. **Deploy.** 
+   - Ensure you are in the `workshops/mai-multimodal-product-launch` folder
+   - Run `bash infra/setup.sh`. It:
+      - checks that your region offers the MAI image models, and skips them with a warning if not,
+      - creates a resource group with a Microsoft Foundry resource and project,
+      - deploys **MAI-Image-2.6** and **MAI-Image-2.6-Flash**, and gives you the **Foundry User** role,
+      - writes this folder's `.env` with the endpoint and deployment names.
 
    Voice and transcription come with the Foundry resource, so there's nothing to deploy for 02 and 03.
 3. **Switch to live.** In each notebook's "Before you start" section, set `DEMO_MODE = "live"` in the mode cell. To switch every notebook at once, add `DEMO_MODE=live` to `.env` instead. The mode cell wins over `.env`.
