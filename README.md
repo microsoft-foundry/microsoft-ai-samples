@@ -24,6 +24,8 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 | Type | Name | What you'll build | MAI models |
 | --- | --- | --- | --- |
 | Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI-Voice-2.1, MAI-Transcribe-2, MAI-Code Flash |
+| Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI-Voice-2.1, MAI-Voice-2.1-Flash |
+| Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI-Transcribe-2 |
 | Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
 
 More notebooks and workshops will be added as they become available.
@@ -42,7 +44,7 @@ Content is organized into three top-level locations:
 | Folder | What it contains | Status |
 | --- | --- | --- |
 | [`workshops/`](workshops/) | End-to-end, hands-on learning paths that take you from setup to a working solution, with guided exercises. Each workshop lives in its own subfolder with a README, `requirements.txt` and `infra/` for its Azure resources. | 1 workshop |
-| [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | Coming soon |
+| [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | 2 samples |
 | [`data/`](data/) | Sample datasets and input files used by specific scenarios. Data is grouped by scenario so workshops and notebooks can share it. | 1 dataset |
 
 The [`assets/`](assets/) folder holds images and other files used by repository documentation. The [`.devcontainer/`](.devcontainer/) sets up Python, Node.js, the Azure CLI and the Azure Developer CLI, and installs every workshop's requirements into a shared `.venv`.
