@@ -436,3 +436,9 @@ FodyWeavers.xsd
 # Workshop live-run results and local settings
 workshops/*/output/
 .env
+
+# Sample notebooks: your own recordings, generated audio and outputs stay local
+samples/*/samples/
+samples/*/outputs/
+samples/*/work/
+samples/**/*.[wW][aA][vV]
