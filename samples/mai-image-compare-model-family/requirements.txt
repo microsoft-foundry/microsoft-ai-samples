@@ -1,0 +1,4 @@
+ipywidgets
+pillow
+python-dotenv
+requests

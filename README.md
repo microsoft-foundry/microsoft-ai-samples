@@ -26,6 +26,14 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 | Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI-Voice-2.1, MAI-Transcribe-2, MAI-Code Flash |
 | Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI-Voice-2.1, MAI-Voice-2.1-Flash |
 | Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI-Transcribe-2 |
+| Sample | [Image generation and editing with MAI-Image](samples/mai-image-generate-and-edit/) | Images from text prompts at different sizes, then edits to an existing image | MAI-Image-2.5 |
+| Sample | [Fast batch image generation with MAI-Image Flash](samples/mai-image-flash-batch-generation/) | Image batches with throughput and cost estimates, concurrent requests, background variations and mood boards | MAI-Image-2.5-Flash |
+| Sample | [Portraits and in-image text with MAI-Image Pro](samples/mai-image-pro-portraits-and-text/) | High-fidelity portraits, accurate in-image text and complex scenes | MAI-Image-2.5-Pro |
+| Sample | [Compare the MAI-Image family](samples/mai-image-compare-model-family/) | Side-by-side Flash, base and Pro results for listings, mood boards, edits and character consistency | MAI-Image-2.5, -Flash, -Pro |
+| Sample | [Multilingual transcription with keyword biasing](samples/mai-transcribe-multilingual-keyword-biasing/) | Filler-word removal, keyword biasing and multilingual transcripts, plus a word-error-rate vs noise benchmark | MAI-Transcribe-1.5 |
+| Sample | [Speaker-aware transcription in noisy audio](samples/mai-transcribe-diarization-and-noise/) | Diarized transcripts with timestamps, tested at rising noise levels and compared with 1.5 | MAI-Transcribe-2, MAI-Transcribe-1.5 |
+| Sample | [Expressive and multilingual speech](samples/mai-voice-expressive-multilingual-speech/) | Styled SSML delivery, locale voices, code-switching and long-form narration | MAI-Voice-2 |
+| Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI-Voice-2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI-Transcribe-2 (+ Microsoft-Decision-1, GPT-6 Sol) |
 | Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
 
 More notebooks and workshops will be added as they become available.
@@ -44,7 +52,7 @@ Content is organized into three top-level locations:
 | Folder | What it contains | Status |
 | --- | --- | --- |
 | [`workshops/`](workshops/) | End-to-end, hands-on learning paths that take you from setup to a working solution, with guided exercises. Each workshop lives in its own subfolder with a README, `requirements.txt` and `infra/` for its Azure resources. | 1 workshop |
-| [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | 2 samples |
+| [`samples/`](samples/) | Self-contained Jupyter notebooks for exploring MAI models and focused, practical use cases. | 10 samples |
 | [`data/`](data/) | Sample datasets and input files used by specific scenarios. Data is grouped by scenario so workshops and notebooks can share it. | 1 dataset |
 
 The [`assets/`](assets/) folder holds images and other files used by repository documentation. The [`.devcontainer/`](.devcontainer/) sets up Python, Node.js, the Azure CLI and the Azure Developer CLI, and installs every workshop's requirements into a shared `.venv`.
