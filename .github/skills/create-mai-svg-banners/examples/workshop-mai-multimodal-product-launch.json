@@ -1,0 +1,53 @@
+{
+  "defaults": {
+    "width": 1600,
+    "height": 900,
+    "background": "light",
+    "eyebrow": "MAI MODELS · MULTIMODAL PRODUCT LAUNCH",
+    "footer": "MICROSOFT AI SAMPLES"
+  },
+  "banners": [
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/00-set-the-stage.svg",
+      "art": "tent-lake",
+      "title": ["One tent,", "one launch"],
+      "subtitle": ["What can MAI models do for", "a real product launch?"],
+      "alt": "MAI Models · Multimodal Product Launch — One tent, one launch: What can MAI models do for a real product launch? Microsoft AI Samples"
+    },
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/01-build-launch-kit.svg",
+      "art": "image-formats",
+      "title": ["Build the", "launch kit"],
+      "subtitle": ["How can MAI-Image-2.6 models support", "a real product launch?"],
+      "alt": "MAI Models · Multimodal Product Launch — Build the launch kit: How can MAI-Image-2.6 models support a real product launch? Microsoft AI Samples"
+    },
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/02-give-it-a-voice.svg",
+      "art": "microphone",
+      "title": ["Give it", "a voice"],
+      "subtitle": ["How can MAI-Voice-2.1 models give", "a launch its voice?"],
+      "alt": "MAI Models · Multimodal Product Launch — Give it a voice: How can MAI-Voice-2.1 models give a launch its voice? Microsoft AI Samples"
+    },
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/03-hear-your-customers.svg",
+      "art": "speech-to-transcript",
+      "title": ["Hear your", "customers"],
+      "subtitle": ["How can MAI-Transcribe-2 turn", "launch audio into answers?"],
+      "alt": "MAI Models · Multimodal Product Launch — Hear your customers: How can MAI-Transcribe-2 turn launch audio into answers? Microsoft AI Samples"
+    },
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/04-refresh-the-storefront.svg",
+      "art": "sketch-to-website",
+      "title": ["Refresh the", "storefront"],
+      "subtitle": ["Can a coding model turn our", "napkin sketch into a website?"],
+      "alt": "MAI Models · Multimodal Product Launch — Refresh the storefront: Can a coding model turn our napkin sketch into a website? Microsoft AI Samples"
+    },
+    {
+      "out": "workshops/mai-multimodal-product-launch/assets/banners/99-learner-guide.svg",
+      "art": "open-book",
+      "title": ["Learner", "guide"],
+      "subtitle": ["How do you build with MAI models,", "step by step?"],
+      "alt": "MAI Models · Multimodal Product Launch — Learner guide: How do you build with MAI models, step by step? Microsoft AI Samples"
+    }
+  ]
+}
