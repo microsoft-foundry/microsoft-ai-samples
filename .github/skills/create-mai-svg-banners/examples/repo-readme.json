@@ -1,0 +1,12 @@
+{
+  "out": "../art/examples/repo-readme-banner.svg",
+  "width": 1280,
+  "height": 360,
+  "background": "light",
+  "art": "multimodal-samples",
+  "eyebrow": "MICROSOFT AI (MAI)",
+  "title": "Developer Samples",
+  "subtitle": "Build with MAI models. Learn by doing.",
+  "footer": "SCENARIOS - SAMPLES - WORKSHOPS",
+  "alt": "Microsoft AI (MAI) Developer Samples — Build with MAI models. Learn by doing."
+}

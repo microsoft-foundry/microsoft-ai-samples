@@ -1,36 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="MAI Models · Multimodal Product Launch — Hear your customers: How can MAI-Transcribe-2 turn launch audio into answers? Microsoft AI Samples">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="MAI Models · Multimodal Product Launch — Hear your customers: How can MAI-Transcribe-2 turn launch audio into answers? Microsoft AI Samples">
   <title>MAI Models · Multimodal Product Launch — Hear your customers: How can MAI-Transcribe-2 turn launch audio into answers? Microsoft AI Samples</title>
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1224"/>
-      <stop offset="0.6" stop-color="#12203a"/>
-      <stop offset="1" stop-color="#172b46"/>
-    </linearGradient>
-    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#72a7ff"/>
-      <stop offset="0.5" stop-color="#a8c9ff"/>
-      <stop offset="1" stop-color="#83ebcf"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="1200" height="300" rx="28"/></clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.32  0 0 0 0 0.29  0 0 0 0.05 0"/>
+    </filter>
   </defs>
-  <g clip-path="url(#card)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect width="1200" height="300" fill="url(#sky)"/>
-    <circle cx="1030" cy="150" r="70" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="106" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="142" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="178" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="214" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="250" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="286" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="322" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <path d="M0 300 L170 214 L280 262 L430 168 L590 250 L720 196 L880 270 L1010 206 L1200 280 L1200 300 Z" fill="#fff" fill-opacity="0.08"/>
-    <path d="M0 300 L120 256 L250 284 L400 236 L560 292 L700 258 L860 296 L1200 262 L1200 300 Z" fill="#fff" fill-opacity="0.12"/>
-    <circle cx="1030" cy="150" r="88" fill="#fff" fill-opacity="0.2"/>
-    <text x="1030" y="154" font-size="104" text-anchor="middle" dominant-baseline="middle" font-family="'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif">👂</text>
-    <text x="64" y="84" font-size="20" font-weight="700" letter-spacing="3" fill="#a8c9ff">MAI MODELS · MULTIMODAL PRODUCT LAUNCH</text>
-    <text x="64" y="156" font-size="60" font-weight="800" fill="#fff">Hear your customers</text>
-    <text x="64" y="208" font-size="26" font-style="italic" fill="#fff" fill-opacity="0.95">How can MAI-Transcribe-2 turn launch audio into answers?</text>
-    <text x="64" y="282" font-size="16" font-weight="600" letter-spacing="1" fill="#fff" fill-opacity="0.7">MICROSOFT AI SAMPLES</text>
-    <rect y="294" width="1200" height="6" fill="url(#stripe)"/>
+  <rect width="1600" height="900" fill="#FEF9ED"/>
+  <rect x="40" y="40" width="1520" height="820" rx="6" fill="none" stroke="#CEC7BC" stroke-opacity="1" stroke-width="2"/>
+  <svg x="836" y="110" width="680" height="680" viewBox="0 0 680 680" preserveAspectRatio="xMidYMid meet" overflow="visible">
+  <g transform="translate(-836 -110)">
+    <circle cx="1180" cy="440" r="250" fill="#FBD3BE" fill-opacity="0.6"/>
+    <g stroke="#5D524B" stroke-width="4" stroke-linejoin="round">
+      <path d="M930 260 H1150 A 20 20 0 0 1 1170 280 V380 A 20 20 0 0 1 1150 400 H990 L950 440 V400 H930 A 20 20 0 0 1 910 380 V280 A 20 20 0 0 1 930 260 Z" fill="#2E4D4D"/>
+      <path d="M1220 330 H1430 A 20 20 0 0 1 1450 350 V430 A 20 20 0 0 1 1430 450 H1410 V490 L1370 450 H1220 A 20 20 0 0 1 1200 430 V350 A 20 20 0 0 1 1220 330 Z" fill="#666583"/>
+    </g>
+    <g stroke="#FEF9ED" stroke-width="6" stroke-linecap="round">
+      <path d="M950 330 V330"/><path d="M972 310 V350"/><path d="M994 296 V364"/><path d="M1016 316 V344"/><path d="M1038 300 V360"/><path d="M1060 320 V340"/><path d="M1082 306 V354"/><path d="M1104 318 V342"/><path d="M1126 330 V330"/>
+      <path d="M1240 390 V390"/><path d="M1262 372 V408"/><path d="M1284 362 V418"/><path d="M1306 378 V402"/><path d="M1328 366 V414"/><path d="M1350 380 V400"/><path d="M1372 372 V408"/><path d="M1394 386 V394"/>
+    </g>
+    <g stroke="#5D524B" stroke-width="4" stroke-linejoin="round">
+      <rect x="1030" y="520" width="300" height="260" rx="12" fill="#FEF9ED"/>
+    </g>
+    <g stroke="#CEC7BC" stroke-width="6" stroke-linecap="round">
+      <path d="M1070 580 H1290"/><path d="M1070 620 H1250"/><path d="M1070 660 H1280"/><path d="M1070 700 H1200"/>
+    </g>
+    <path d="M1070 740 H1160" stroke="#8C5462" stroke-width="6" stroke-linecap="round"/>
   </g>
+</svg>
+  <path d="M128 222 H184" stroke="#8C5462" stroke-width="3" stroke-linecap="round"/>
+  <text x="128" y="276" font-family="'Red Hat Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="22" letter-spacing="3" fill="#72675B">MAI MODELS · MULTIMODAL PRODUCT LAUNCH</text>
+  <text font-family="'Source Serif 4', 'Lora', Georgia, 'Times New Roman', serif" font-size="96" letter-spacing="-1.5" fill="#5D524B"><tspan x="128" y="396">Hear your</tspan><tspan x="128" y="500">customers</tspan></text>
+  <text font-family="'Source Serif 4', 'Lora', Georgia, 'Times New Roman', serif" font-style="italic" font-size="36" fill="#72675B"><tspan x="128" y="590">How can MAI-Transcribe-2 turn</tspan><tspan x="128" y="642">launch audio into answers?</tspan></text>
+  <text x="128" y="792" font-family="'Red Hat Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="18" letter-spacing="3" fill="#72675B">MICROSOFT AI SAMPLES</text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
 </svg>

@@ -1,36 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="MAI Models · Multimodal Product Launch — One tent, one launch: What can MAI models do for a real product launch? Microsoft AI Samples">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="MAI Models · Multimodal Product Launch — One tent, one launch: What can MAI models do for a real product launch? Microsoft AI Samples">
   <title>MAI Models · Multimodal Product Launch — One tent, one launch: What can MAI models do for a real product launch? Microsoft AI Samples</title>
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1224"/>
-      <stop offset="0.6" stop-color="#12203a"/>
-      <stop offset="1" stop-color="#172b46"/>
-    </linearGradient>
-    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#72a7ff"/>
-      <stop offset="0.5" stop-color="#a8c9ff"/>
-      <stop offset="1" stop-color="#83ebcf"/>
-    </linearGradient>
-    <clipPath id="card"><rect width="1200" height="300" rx="28"/></clipPath>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.36  0 0 0 0 0.32  0 0 0 0 0.29  0 0 0 0.05 0"/>
+    </filter>
   </defs>
-  <g clip-path="url(#card)" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect width="1200" height="300" fill="url(#sky)"/>
-    <circle cx="1030" cy="150" r="70" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="106" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="142" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="178" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="214" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="250" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="286" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <circle cx="1030" cy="150" r="322" fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="2"/>
-    <path d="M0 300 L170 214 L280 262 L430 168 L590 250 L720 196 L880 270 L1010 206 L1200 280 L1200 300 Z" fill="#fff" fill-opacity="0.08"/>
-    <path d="M0 300 L120 256 L250 284 L400 236 L560 292 L700 258 L860 296 L1200 262 L1200 300 Z" fill="#fff" fill-opacity="0.12"/>
-    <circle cx="1030" cy="150" r="88" fill="#fff" fill-opacity="0.2"/>
-    <text x="1030" y="154" font-size="104" text-anchor="middle" dominant-baseline="middle" font-family="'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif">🧭</text>
-    <text x="64" y="84" font-size="20" font-weight="700" letter-spacing="3" fill="#a8c9ff">MAI MODELS · MULTIMODAL PRODUCT LAUNCH</text>
-    <text x="64" y="156" font-size="60" font-weight="800" fill="#fff">One tent, one launch</text>
-    <text x="64" y="208" font-size="26" font-style="italic" fill="#fff" fill-opacity="0.95">What can MAI models do for a real product launch?</text>
-    <text x="64" y="282" font-size="16" font-weight="600" letter-spacing="1" fill="#fff" fill-opacity="0.7">MICROSOFT AI SAMPLES</text>
-    <rect y="294" width="1200" height="6" fill="url(#stripe)"/>
+  <rect width="1600" height="900" fill="#FEF9ED"/>
+  <rect x="40" y="40" width="1520" height="820" rx="6" fill="none" stroke="#CEC7BC" stroke-opacity="1" stroke-width="2"/>
+  <svg x="836" y="110" width="680" height="680" viewBox="0 0 680 680" preserveAspectRatio="xMidYMid meet" overflow="visible">
+  <g transform="translate(-836 -110)">
+    <clipPath id="tent-lake-clip"><circle cx="1176" cy="450" r="320"/></clipPath>
+    <g clip-path="url(#tent-lake-clip)">
+    <rect x="850" y="120" width="660" height="660" fill="#F5F0E4"/>
+    <circle cx="1230" cy="380" r="140" fill="#FBD3BE"/>
+    <path d="M850 560 C 980 470 1060 500 1140 450 C 1220 400 1320 430 1510 500 L1510 640 L850 640 Z" fill="#CEC7BC"/>
+    <path d="M850 610 C 990 540 1090 560 1180 530 C 1280 500 1380 540 1510 580 L1510 660 L850 660 Z" fill="#2E4D4D"/>
+    <path d="M850 660 L1510 660 L1510 790 L850 790 Z" fill="#FEF9ED"/>
+    <g stroke="#CEC7BC" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M940 700 H1080"/><path d="M1130 730 H1330"/><path d="M1010 760 H1140"/><path d="M1300 700 H1420"/>
+    </g>
+    <g stroke="#5D524B" stroke-width="4" stroke-linejoin="round">
+      <path d="M1090 610 L1176 470 L1262 610 Z" fill="#FBD3BE"/>
+      <path d="M1176 470 L1150 610 L1202 610 Z" fill="#8C5462"/>
+      <path d="M1176 470 L1176 448" fill="none"/>
+    </g>
+    <g fill="#2E4D4D">
+      <path d="M960 600 L985 530 L1010 600 Z"/><path d="M995 605 L1015 550 L1035 605 Z"/>
+      <path d="M1370 590 L1395 515 L1420 590 Z"/>
+    </g>
+    </g>
+    <circle cx="1176" cy="450" r="320" fill="none" stroke="#5D524B" stroke-width="4"/>
   </g>
+</svg>
+  <path d="M128 222 H184" stroke="#8C5462" stroke-width="3" stroke-linecap="round"/>
+  <text x="128" y="276" font-family="'Red Hat Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="22" letter-spacing="3" fill="#72675B">MAI MODELS · MULTIMODAL PRODUCT LAUNCH</text>
+  <text font-family="'Source Serif 4', 'Lora', Georgia, 'Times New Roman', serif" font-size="96" letter-spacing="-1.5" fill="#5D524B"><tspan x="128" y="396">One tent,</tspan><tspan x="128" y="500">one launch</tspan></text>
+  <text font-family="'Source Serif 4', 'Lora', Georgia, 'Times New Roman', serif" font-style="italic" font-size="36" fill="#72675B"><tspan x="128" y="590">What can MAI models do for</tspan><tspan x="128" y="642">a real product launch?</tspan></text>
+  <text x="128" y="792" font-family="'Red Hat Mono', 'SFMono-Regular', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="18" letter-spacing="3" fill="#72675B">MICROSOFT AI SAMPLES</text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
 </svg>

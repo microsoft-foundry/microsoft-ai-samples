@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="680" height="680">
+  <g transform="translate(-836 -110)">
+    <clipPath id="tent-lake-clip"><circle cx="1176" cy="450" r="320"/></clipPath>
+    <g clip-path="url(#tent-lake-clip)">
+    <rect x="850" y="120" width="660" height="660" fill="#F5F0E4"/>
+    <circle cx="1230" cy="380" r="140" fill="#FBD3BE"/>
+    <path d="M850 560 C 980 470 1060 500 1140 450 C 1220 400 1320 430 1510 500 L1510 640 L850 640 Z" fill="#CEC7BC"/>
+    <path d="M850 610 C 990 540 1090 560 1180 530 C 1280 500 1380 540 1510 580 L1510 660 L850 660 Z" fill="#2E4D4D"/>
+    <path d="M850 660 L1510 660 L1510 790 L850 790 Z" fill="#FEF9ED"/>
+    <g stroke="#CEC7BC" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M940 700 H1080"/><path d="M1130 730 H1330"/><path d="M1010 760 H1140"/><path d="M1300 700 H1420"/>
+    </g>
+    <g stroke="#5D524B" stroke-width="4" stroke-linejoin="round">
+      <path d="M1090 610 L1176 470 L1262 610 Z" fill="#FBD3BE"/>
+      <path d="M1176 470 L1150 610 L1202 610 Z" fill="#8C5462"/>
+      <path d="M1176 470 L1176 448" fill="none"/>
+    </g>
+    <g fill="#2E4D4D">
+      <path d="M960 600 L985 530 L1010 600 Z"/><path d="M995 605 L1015 550 L1035 605 Z"/>
+      <path d="M1370 590 L1395 515 L1420 590 Z"/>
+    </g>
+    </g>
+    <circle cx="1176" cy="450" r="320" fill="none" stroke="#5D524B" stroke-width="4"/>
+  </g>
+</svg>
