@@ -66,17 +66,24 @@
   // All episode text goes in with textContent, so nothing in the data can run as markup.
   const data = JSON.parse(document.getElementById("episode").textContent);
   const $ = (id) => document.getElementById(id);
+  function safeUrl(value) {
+    const url = new URL(value, document.baseURI);
+    if (!["http:", "https:", "file:"].includes(url.protocol)) {
+      throw new Error("Unsupported URL protocol: " + url.protocol);
+    }
+    return url.href;
+  }
   $("title").textContent = data.title;
   $("subtitle").textContent = data.subtitle || "";
   $("disclosure").textContent = data.disclosure;
   const audio = $("audio");
-  audio.src = data.audio;
+  audio.src = safeUrl(data.audio);
   const stage = $("stage");
-  stage.src = data.cover;
+  stage.src = safeUrl(data.cover);
 
   const origin = document.createElement("a");
   origin.textContent = "Read the original announcement";
-  origin.href = data.source.url;
+  origin.href = safeUrl(data.source.url);
   origin.target = "_blank";
   origin.rel = "noopener noreferrer";
   $("origin").append(origin, document.createTextNode(" (" + data.source.date + ")"));
@@ -121,7 +128,7 @@
       box.appendChild(small);
       $("sources").appendChild(box);
     });
-    stage.src = slide.image;
+    stage.src = safeUrl(slide.image);
   }
 
   audio.addEventListener("timeupdate", () => {

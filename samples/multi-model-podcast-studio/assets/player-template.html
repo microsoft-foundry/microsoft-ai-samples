@@ -62,13 +62,20 @@
   // All episode text goes in with textContent, so nothing in the data can run as markup.
   const data = JSON.parse(document.getElementById("episode").textContent);
   const $ = (id) => document.getElementById(id);
+  function safeUrl(value) {
+    const url = new URL(value, document.baseURI);
+    if (!["http:", "https:", "file:"].includes(url.protocol)) {
+      throw new Error("Unsupported URL protocol: " + url.protocol);
+    }
+    return url.href;
+  }
   $("title").textContent = data.title;
   $("subtitle").textContent = data.subtitle || "";
   $("disclosure").textContent = data.disclosure;
   const audio = $("audio");
-  audio.src = data.audio;
+  audio.src = safeUrl(data.audio);
   const stage = $("stage");
-  stage.src = data.cover;
+  stage.src = safeUrl(data.cover);
 
   const chapterButtons = new Map();
   data.chapters.forEach((chapter) => {
@@ -119,7 +126,7 @@
       const small = document.createElement("small");
       const link = document.createElement("a");
       link.textContent = cite.card + " card";
-      link.href = cite.url;
+      link.href = safeUrl(cite.url);
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       small.append(link, document.createTextNode(", " + cite.context));
@@ -134,7 +141,7 @@
     if (chapter !== currentChapter) {
       if (currentChapter) chapterButtons.get(currentChapter.id).classList.remove("on");
       currentChapter = chapter;
-      if (chapter) { chapterButtons.get(chapter.id).classList.add("on"); stage.src = chapter.image; }
+      if (chapter) { chapterButtons.get(chapter.id).classList.add("on"); stage.src = safeUrl(chapter.image); }
     }
     const line = data.lines.find((l) => t >= l.start && t < l.end) || null;
     if (line !== currentLine) {
