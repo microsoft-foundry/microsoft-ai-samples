@@ -1,0 +1,8 @@
+azure-ai-transcription
+azure-identity
+jiwer
+matplotlib
+numpy
+pandas
+python-dotenv
+soundfile

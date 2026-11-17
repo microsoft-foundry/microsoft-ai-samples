@@ -1,0 +1,5 @@
+azure-ai-transcription
+azure-identity
+pandas
+python-dotenv
+soundfile

@@ -440,5 +440,6 @@ workshops/*/output/
 # Sample notebooks: your own recordings, generated audio and outputs stay local
 samples/*/samples/
 samples/*/outputs/
+samples/*/output/
 samples/*/work/
 samples/**/*.[wW][aA][vV]

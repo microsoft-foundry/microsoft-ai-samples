@@ -1,0 +1,7 @@
+azure-ai-transcription
+azure-cognitiveservices-speech
+matplotlib
+pandas
+pillow
+python-dotenv
+requests
