@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # Delete everything infra/setup.sh created, after you confirm.
 #
 #   bash infra/teardown.sh

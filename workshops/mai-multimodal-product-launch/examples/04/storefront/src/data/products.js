@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 export const products = [
   {
     slug: 'trailmaster-x4-tent', name: 'TrailMaster X4 Tent', price: 250, brand: 'OutdoorLiving', category: 'Tents', season: '3-season', image: '/images/trailmaster-x4-tent.webp',

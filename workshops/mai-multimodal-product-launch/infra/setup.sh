@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # Deploy the Azure resources for this workshop and write ../.env.
 #
 #   bash infra/setup.sh                    # defaults: eastus, rg-mai-multimodal-product-launch

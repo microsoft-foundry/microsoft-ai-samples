@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 """Explicit, bounded Azure requests for the MAI-Voice podcast notebook."""
 
 import io

@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 """Build the contoso-retail dataset from Azure-Samples/contoso-web.
 
 Clones the pinned upstream commit, removes LLM-generation leftovers from the manuals,
