@@ -1,3 +1,6 @@
+<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT License. -->
+
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description">
   <title id="title">Microsoft AI (MAI) Developer Samples</title>
   <desc id="description">A text-based developer samples banner on a dark blue background with blue and mint accents. Build with MAI models. Learn by doing. Scenarios, samples, and workshops.</desc>

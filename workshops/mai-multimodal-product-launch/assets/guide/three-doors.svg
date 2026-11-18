@@ -1,3 +1,6 @@
+<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT License. -->
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="One Microsoft Foundry resource, three doors. Your code signs in with a keyless Microsoft Entra token. Door 1: the MAI image API at the services.ai.azure.com address, for MAI-Image-2.6 and Flash deployments. Door 2: the Speech SDK at the cognitiveservices.azure.com address, for MAI-Voice-2.1 and Flash, chosen in SSML. Door 3: the Speech transcription REST API, for MAI-Transcribe-2, chosen in the request definition. Outside your resource: MAI-Code-1.1-Flash in GitHub Copilot, MAI-Thinking-1 in the Foundry catalog, and MAI-Cyber-1.1-Flash through MDASH.">
   <title>One Foundry resource, three doors</title>
   <defs>

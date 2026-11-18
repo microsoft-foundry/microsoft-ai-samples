@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 // Microsoft Foundry resource + project for the MAI multimodal product launch workshop.
 // Deploy with infra/setup.sh, which also checks the region and writes ../.env.
 
