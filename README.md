@@ -89,6 +89,13 @@ Samples connect to MAI model deployments through publicly available endpoints. Y
 
 This repository contains **sample code and documentation only**. It does not include model weights, customer data, internal source code, or secrets.
 
+## Resources
+
+- Additional Foundry Model Samples: [https://github.com/nitya/model-releases](https://github.com/microsoft-foundry/model-releases)
+- MAI in the Microsoft Ignite Keynote: [Watch the keynote segment](https://www.youtube.com/watch?v=ZR4v1c4CClc&t=5697s)
+- MAI Model Release Blog Thread: [Read the thread](https://x.com/MicrosoftAI/status/2122778863235178806)
+
+
 ## Project status
 
 This repository is under active preparation. The sample catalog and contribution guidance will grow as content is published.
