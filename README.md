@@ -91,7 +91,7 @@ This repository contains **sample code and documentation only**. It does not inc
 
 ## Resources
 
-- Additional Foundry Model Samples: [https://github.com/nitya/model-releases](https://github.com/microsoft-foundry/model-releases)
+- Additional Foundry Model Samples: [https://github.com/microsoft-foundry/model-releases](https://github.com/microsoft-foundry/model-releases)
 - MAI in the Microsoft Ignite Keynote: [Watch the keynote segment](https://www.youtube.com/watch?v=ZR4v1c4CClc&t=5697s)
 - MAI Model Release Blog Thread: [Read the thread](https://x.com/MicrosoftAI/status/2122778863235178806)
 
