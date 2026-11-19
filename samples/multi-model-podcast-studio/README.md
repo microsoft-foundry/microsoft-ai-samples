@@ -47,7 +47,7 @@ notebooks:
 
 # Foundry Podcast Studio — Scenario
 
-> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [nitya/model-releases](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/multi-model-scenarios/foundry-podcast-studio). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
+> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [microsoft-foundry/model-releases](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/multi-model-scenarios/foundry-podcast-studio). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
 
 **Scope:** cross-publisher · **Capabilities:** Audio / Speech · Image Generation · Decision Models · Chat Completion
 
@@ -117,15 +117,15 @@ Each model has one job, picked for what the job needs.
 
 | Step | Model | Family | Why this model |
 |---|---|---|---|
-| Score paragraphs and pick slide types | [Microsoft-Decision-1](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | Typed answers over many short inputs, with a "cannot tell" option |
+| Score paragraphs and pick slide types | [Microsoft-Decision-1](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | Typed answers over many short inputs, with a "cannot tell" option |
 | Draft slides and narration | [GPT-6 Sol](https://ai.azure.com/catalog/models/gpt-6-sol) | OpenAI | This step writes, so it needs a generative model |
-| Check each slide against its source | [Microsoft-Decision-1](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | A choice of supported, contradicted, or cannot tell, as in [notebook 03](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/03-guard-and-grade-the-ops-copilot.ipynb) of that capsule |
+| Check each slide against its source | [Microsoft-Decision-1](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | A choice of supported, contradicted, or cannot tell, as in [notebook 03](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/03-guard-and-grade-the-ops-copilot.ipynb) of that capsule |
 | Slide art | [MAI-Image-2.6-Flash](https://ai.azure.com/catalog/models/MAI-Image-2.6-Flash) | MAI | Faster, for many images |
 | Cover art | [MAI-Image-2.6](https://ai.azure.com/catalog/models/MAI-Image-2.6) | MAI | The full model, for the one image people see first |
 | Narration | [MAI-Voice-2.1](https://ai.azure.com/catalog/models/MAI-Voice-2.1) | MAI | Expressive speech, with two prebuilt hosts |
 | Captions and slide timing | [MAI-Transcribe-2](../mai-transcribe-diarization-and-noise/README.md) | MAI | Word timestamps and speaker labels |
 | Write the player page | [GPT-6 Sol](https://ai.azure.com/catalog/models/gpt-6-sol) | OpenAI | Front-end code is generated text, so the same model that drafts the slides can write it |
-| Review the generated code | [Microsoft-Decision-1](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | Yes-or-no questions about what the code does |
+| Review the generated code | [Microsoft-Decision-1](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | Yes-or-no questions about what the code does |
 
 Because each job is a deployment named for the job, such as `slide-writer`, swapping GPT-6 Sol for a newer
 model is a one-line change. One model can hold two jobs, as GPT-6 Sol does here. Mixing families works because
@@ -183,7 +183,7 @@ A narrated episode sounds authoritative, so it's worth being careful about what 
 
 ## Before You Begin
 
-Complete [models/quickstart/](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry setup, then deploy the
+Complete [models/quickstart/](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry setup, then deploy the
 models. Name each deployment for its job:
 
 ```bash
@@ -286,13 +286,13 @@ Azure Storage, and for an alternative built from several agents that talk over t
 
 ## References
 
-- [Model cards primer](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/model-cards.md) — how to read a card before relying on a model.
-- [Decision models primer](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/decision-models.md) — choice, score, and yes-or-no questions, and when to use them.
-- [Audio / Speech primer](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/audio-speech.md) — speech synthesis and transcription background.
-- [Image generation primer](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/image-generation.md) — what the image models take in and return.
-- [Microsoft-Decision-1 capsule](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) — the question types and the grounding pattern used here.
+- [Model cards primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/model-cards.md) — how to read a card before relying on a model.
+- [Decision models primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/decision-models.md) — choice, score, and yes-or-no questions, and when to use them.
+- [Audio / Speech primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/audio-speech.md) — speech synthesis and transcription background.
+- [Image generation primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/image-generation.md) — what the image models take in and return.
+- [Microsoft-Decision-1 capsule](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) — the question types and the grounding pattern used here.
 - [MAI-Transcribe-2 capsule](../mai-transcribe-diarization-and-noise/README.md) — speaker labels, word timestamps, and phrase lists.
 - [Deploy and use Microsoft-Decision-1](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision) — official request and response shapes.
 - [MAI voices in Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) — prebuilt voices, styles, and gated features.
 - [Deploy and use MAI image models in Microsoft Foundry](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image?tabs=python) — the image generation API and its limits.
-- [Glossary](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/GLOSSARY.md) — plain-language definitions for the terms used here.
+- [Glossary](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/GLOSSARY.md) — plain-language definitions for the terms used here.
