@@ -88,7 +88,7 @@ flowchart TB
 | `score_paragraphs(paragraphs)` | Microsoft-Decision-1 | A score and a slide type for each paragraph |
 | `draft_deck(paragraphs)` | GPT-6 Sol | Slides with bullets, narration, and cited paragraph numbers |
 | `check_deck(deck, paragraphs)` | Microsoft-Decision-1 plus plain checks | Supported, contradicted, or cannot tell for each slide |
-| `make_media(deck)` | MAI-Image-2.6 and Flash, MAI-Voice-2.1, MAI-Transcribe-2 | Image files, audio files, word timestamps |
+| `make_media(deck)` | MAI-Image-2.6 and Flash, MAI Voice 2.1, MAI Transcribe 2 | Image files, audio files, word timestamps |
 | `assemble_video(deck, media)` | `ffmpeg` | An MP4 and a caption file |
 | `store_episode(episode)` | Azure Blob Storage | Blob paths |
 
@@ -121,7 +121,7 @@ ffmpeg -f concat -safe 0 -i slides.txt -i narration.wav -i captions.vtt \
 ```
 
 `slides.txt` lists each image with a `duration`, and the durations come from the word timestamps that
-MAI-Transcribe-2 returns. Package `ffmpeg` in a container image, and size the sandbox for the largest episode we
+MAI Transcribe 2 returns. Package `ffmpeg` in a container image, and size the sandbox for the largest episode we
 expect. A 2 vCPU, 4 GiB sandbox is the largest size listed, so start there and measure.
 
 ### Identity and security

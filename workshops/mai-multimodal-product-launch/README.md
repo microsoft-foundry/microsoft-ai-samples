@@ -18,8 +18,8 @@ Each notebook gives one job to one MAI model family, and answers the questions a
 | --- | --- | --- | --- |
 | 00 | [Set the stage](./00-set-the-stage.ipynb) | What can MAI models do for a real product launch? | None. The story, the launch kit, and how to use this workshop |
 | 01 | [Build the launch kit](./01-build-launch-kit.ipynb) | How can MAI-Image-2.6 models support a real product launch? | MAI-Image-2.6, MAI-Image-2.6-Flash |
-| 02 | [Give it a voice](./02-give-it-a-voice.ipynb) | How can MAI-Voice-2.1 models give a launch its voice? | MAI-Voice-2.1, MAI-Voice-2.1-Flash |
-| 03 | [Hear your customers](./03-hear-your-customers.ipynb) | How can MAI-Transcribe-2 turn launch audio into answers? | MAI-Transcribe-2 |
+| 02 | [Give it a voice](./02-give-it-a-voice.ipynb) | How can MAI Voice 2.1 models give a launch its voice? | MAI Voice 2.1, MAI Voice 2.1 Flash |
+| 03 | [Hear your customers](./03-hear-your-customers.ipynb) | How can MAI Transcribe 2 turn launch audio into answers? | MAI Transcribe 2 |
 | 04 | [Refresh the storefront](./04-refresh-the-storefront.ipynb) | Can a coding model turn our napkin sketch into a website? | The latest MAI-Code-X.Y-Flash in GitHub Copilot (may be in preview) |
 | 99 | [Learner guide](./99-learner-guide.ipynb) | How do you build with MAI models, step by step? | All six MAI models: a reference manual with request templates and a debugging playbook. Runs without Azure |
 
@@ -84,7 +84,7 @@ Your pictures, audio and site files are saved under `output/`, which Git ignores
 
 | Note | What it means for you |
 | --- | --- |
-| **Release status varies** | MAI-Image-2.6 and Flash are generally available in Foundry. MAI-Voice-2.1 and Flash are in preview, and the MAI-Code Flash model in Copilot may be too. Check the model cards before production promises |
+| **Release status varies** | MAI-Image-2.6 and Flash are generally available in Foundry. MAI Voice 2.1 and Flash are in preview, and the MAI-Code Flash model in Copilot may be too. Check the model cards before production promises |
 | **Every run is different** | Your pictures and audio won't match ours. Judge them with each section's checklist, not by matching ours |
 | **Text and speech are English-first** | Have a native speaker check other languages |
 | **You pay per use** | Per picture, per character spoken and per hour transcribed. See [MAI pricing](https://aka.ms/MAIModelPricing) and [Speech pricing](https://aka.ms/SpeechPricing) |

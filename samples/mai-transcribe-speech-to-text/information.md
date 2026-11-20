@@ -1,4 +1,4 @@
-# MAI-Transcribe-2: from conversation to usable text
+# MAI Transcribe 2: from conversation to usable text
 
 A recording captures a conversation, but finding something inside it still
 takes work. You might remember a decision without remembering when it was made,
@@ -6,7 +6,7 @@ want to revisit a particular speaker's explanation, or need a readable version
 of an interview. Transcription makes those recordings easier to use, especially
 when the text stays connected to the people speaking and the original audio.
 
-**MAI-Transcribe-2** is Microsoft's speech-to-text model for completed
+**MAI Transcribe 2** is Microsoft's speech-to-text model for completed
 recordings. Available through Azure Speech in Microsoft Foundry, it combines
 multilingual recognition with speaker labels, timestamps, and a choice of
 transcription styles. The result can be more than a block of text: it can become
@@ -24,14 +24,14 @@ publishers rather than presented as measurements from the accompanying notebook.
 
 ## Where the model fits
 
-MAI-Transcribe-2 is a model, while **Azure Speech in Microsoft Foundry** is the
+MAI Transcribe 2 is a model, while **Azure Speech in Microsoft Foundry** is the
 managed service that exposes it. **Fast transcription** is the synchronous
 file-processing API: the application sends a recording and waits for the
 result. That API can run different models, so using the endpoint alone does not
-establish that a request used MAI-Transcribe-2.
+establish that a request used MAI Transcribe 2.
 
 The default model on this surface is Azure Transcribe. Enhanced mode also
-provides access to Azure LLM Speech, while MAI-Transcribe-2 is selected explicitly
+provides access to Azure LLM Speech, while MAI Transcribe 2 is selected explicitly
 by name. Azure Speech's asynchronous **batch transcription** is a different
 workflow for processing stored recordings as jobs; it is not another name for
 the MAI fast-transcription request.
@@ -39,7 +39,7 @@ the MAI fast-transcription request.
 The version matters when following older tutorials. Microsoft's
 [MAI documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
 lists MAI-Transcribe-1 as deprecated on August 20, 2026, and still lists
-MAI-Transcribe-1.5 as supported. Microsoft announced MAI-Transcribe-2 on
+MAI-Transcribe-1.5 as supported. Microsoft announced MAI Transcribe 2 on
 September 3, followed by the separate streaming model on October 1.
 Version 1 examples, prices, and availability should not be carried over to
 version 2. Similarly, MAI-Voice generates speech from text; it is not a
@@ -47,7 +47,7 @@ transcription model.
 
 ## A transcript in the speaker's language
 
-MAI-Transcribe-2 supports 60 languages, including English and Dutch. It detects
+MAI Transcribe 2 supports 60 languages, including English and Dutch. It detects
 the language automatically by default, so an application can process an English
 interview and a Dutch conversation without selecting a different model. When
 the language is known, a request can supply a single language hint through
@@ -95,7 +95,7 @@ Transcription preserves the language being spoken; it does not translate the
 recording into another language. Translation and free-form prompting are
 features of the separate
 [Azure LLM Speech model](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/llm-speech),
-which shares the fast-transcription API surface but is not MAI-Transcribe-2.
+which shares the fast-transcription API surface but is not MAI Transcribe 2.
 
 ## Following the conversation
 
@@ -105,7 +105,7 @@ assigns anonymous speaker labels. Those labels help a reader follow a discussion
 but they do not identify people by name or establish that a speaker in one
 recording is the same person in another.
 
-Timestamps connect those turns back to the recording. MAI-Transcribe-2 can
+Timestamps connect those turns back to the recording. MAI Transcribe 2 can
 return segment-level timing or more detailed word-level timing. An application
 can use that information to let someone select a word and listen to the
 surrounding audio, rather than searching through the entire recording.
@@ -120,7 +120,7 @@ when checking a transcript.
 Speaker diarization is also different from separating audio channels. A stereo
 file might place each participant on a different channel, but the
 [shared API feature matrix](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create)
-does not list independent stereo-channel transcription for MAI-Transcribe-2.
+does not list independent stereo-channel transcription for MAI Transcribe 2.
 Channel handling available with Azure Transcribe should not be assumed to
 transfer to MAI. The accompanying notebook uses mono recordings.
 
@@ -128,7 +128,7 @@ transfer to MAI. The accompanying notebook uses mono recordings.
 
 Spoken language rarely reads like a finished document. People hesitate, repeat
 themselves, start a sentence again, and correct what they just said.
-MAI-Transcribe-2 offers two styles for different uses of that speech.
+MAI Transcribe 2 offers two styles for different uses of that speech.
 
 **Verbatim** is the default style and preserves fillers, false starts, and
 self-corrections. It is useful when the way something was said matters, or when
@@ -157,13 +157,13 @@ your vocabulary.
 
 This is a vocabulary list, not a general-purpose instruction prompt. Requests
 such as "translate this into English" or "summarize the discussion" are not
-documented MAI-Transcribe-2 keyword-hint features. Noise robustness is likewise
+documented MAI Transcribe 2 keyword-hint features. Noise robustness is likewise
 a model capability rather than a switch: there is no option here that guarantees
 correct recognition of an unclear recording.
 
 ## From an audio file to a structured response
 
-MAI-Transcribe-2 uses the synchronous fast-transcription API. An application
+MAI Transcribe 2 uses the synchronous fast-transcription API. An application
 uploads a completed recording and receives a structured JSON response when
 processing finishes. The model-specific documentation lists WAV, MP3, and FLAC
 as supported formats.
@@ -183,7 +183,7 @@ POST https://<resource-name>.cognitiveservices.azure.com/speechtotext/transcript
 ```
 
 The multipart request contains an `audio` file and a JSON-serialized `definition`
-field. This definition selects MAI-Transcribe-2 and asks for word timestamps,
+field. This definition selects MAI Transcribe 2 and asks for word timestamps,
 verbatim text, speaker diarization, and vocabulary hints:
 
 ```json
@@ -291,7 +291,7 @@ regions; the resource's location is not, by itself, a data-residency guarantee.
 ### Understanding the bill
 
 Microsoft announced an introductory price of **$0.10 per hour of audio** for
-MAI-Transcribe-2 through the end of 2026. At that rate, ten minutes of audio costs
+MAI Transcribe 2 through the end of 2026. At that rate, ten minutes of audio costs
 about $0.017 for transcription alone. Processing the same recording again, for
 example to compare clean and verbatim output, adds another transcription
 request. The [launch announcement](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/)
@@ -335,7 +335,7 @@ Published size and duration limits also differ:
 
 | Source | Published file limit | Scope |
 | --- | --- | --- |
-| [MAI-Transcribe-2 model card](https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf), September 3 | 300 MB / two hours | Model-specific launch information |
+| [MAI Transcribe 2 model card](https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf), September 3 | 300 MB / two hours | Model-specific launch information |
 | [REST reference for API `2025-10-15`](https://learn.microsoft.com/en-us/rest/api/speechtotext/transcriptions/transcribe?view=rest-speechtotext-2025-10-15) | Smaller than 250 MB and shorter than two hours | Generated API reference |
 | [Fast-transcription guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create) and [quotas page](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-services-quotas-and-limits) | Smaller than 500 MB and shorter than five hours | Shared service documentation |
 | [MAI model guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe) | Refers to the REST reference and notes shorter recordings for diarization | Does not resolve the exact diarization cap |
@@ -395,7 +395,7 @@ to an application than several minor wording differences.
 
 Uploading a recording and getting a fast response is not the same as receiving
 text while someone is speaking. Microsoft provides a separate model,
-**MAI-Transcribe-2-Streaming**, for continuous audio and incremental transcripts.
+**MAI Transcribe 2 Streaming**, for continuous audio and incremental transcripts.
 It returns provisional text that can change as more speech arrives, alongside
 finalized text.
 
@@ -526,7 +526,7 @@ reconnect behavior should make any gap in the transcript clear.
 
 ## When a different model is a better fit
 
-MAI-Transcribe-2 is one option in a wider set of speech services. The distinction
+MAI Transcribe 2 is one option in a wider set of speech services. The distinction
 matters most when an application needs a capability beyond its documented
 transcription features.
 
@@ -569,10 +569,10 @@ considerations.
 Its model card lists English, Chinese, German, French, Italian, Japanese,
 Spanish, and Portuguese as audio languages. Dutch is listed for text, **not
 audio**. It should not be assumed to offer the same Dutch speech support as
-MAI-Transcribe-2.
+MAI Transcribe 2.
 
 The MAI sources linked here do not document downloadable weights or local
-container deployment for MAI-Transcribe-2. General Azure Speech container
+container deployment for MAI Transcribe 2. General Azure Speech container
 availability does not establish that MAI can run locally.
 
 ## Looking after recordings and transcripts
@@ -632,13 +632,13 @@ distinct from evaluations of recognition on natural speech.
 
 Follow the [demo instructions](demo-instructions.md) to configure Azure access
 and prepare your recordings. For more examples and model details, continue with
-the [MAI-Transcribe-2 documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
+the [MAI Transcribe 2 documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
 or the [model card](https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf).
 
 For a no-code starting point, the
 [Foundry Speech-to-text playground](https://aka.ms/foundry-speech-to-text)
 provides transcript, JSON, and code views as described in the fast-transcription
-guide. Explicitly select MAI-Transcribe-2: opening "Fast transcription" or
+guide. Explicitly select MAI Transcribe 2: opening "Fast transcription" or
 enabling enhanced mode alone does not establish which model is running.
 The [Microsoft AI model directory](https://microsoft.ai/models/) and
 [Microsoft AI Playground](https://playground.microsoft.ai/) provide broader

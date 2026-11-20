@@ -25,15 +25,15 @@
       "out": "workshops/mai-multimodal-product-launch/assets/banners/02-give-it-a-voice.svg",
       "art": "microphone",
       "title": ["Give it", "a voice"],
-      "subtitle": ["How can MAI-Voice-2.1 models give", "a launch its voice?"],
-      "alt": "MAI Models · Multimodal Product Launch — Give it a voice: How can MAI-Voice-2.1 models give a launch its voice? Microsoft AI Samples"
+      "subtitle": ["How can MAI Voice 2.1 models give", "a launch its voice?"],
+      "alt": "MAI Models · Multimodal Product Launch — Give it a voice: How can MAI Voice 2.1 models give a launch its voice? Microsoft AI Samples"
     },
     {
       "out": "workshops/mai-multimodal-product-launch/assets/banners/03-hear-your-customers.svg",
       "art": "speech-to-transcript",
       "title": ["Hear your", "customers"],
-      "subtitle": ["How can MAI-Transcribe-2 turn", "launch audio into answers?"],
-      "alt": "MAI Models · Multimodal Product Launch — Hear your customers: How can MAI-Transcribe-2 turn launch audio into answers? Microsoft AI Samples"
+      "subtitle": ["How can MAI Transcribe 2 turn", "launch audio into answers?"],
+      "alt": "MAI Models · Multimodal Product Launch — Hear your customers: How can MAI Transcribe 2 turn launch audio into answers? Microsoft AI Samples"
     },
     {
       "out": "workshops/mai-multimodal-product-launch/assets/banners/04-refresh-the-storefront.svg",
