@@ -30,9 +30,9 @@ notebooks:
 
 # MAI-Transcribe-1.5 — Release Capsule
 
-> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [nitya/model-releases](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/mai-transcribe-1.5). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
+> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [microsoft-foundry/model-releases](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/mai-transcribe-1.5). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
 
-**Released:** 2026-06-02 · **Publisher:** [Microsoft AI](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/README.md) · **Capability:** Audio / Speech
+**Released:** 2026-06-02 · **Publisher:** [Microsoft AI](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/README.md) · **Capability:** Audio / Speech
 
 > **Public preview.** MAI-Transcribe runs on the LLM Speech API, which is in public preview — no SLA, not recommended for production workloads.
 
@@ -46,7 +46,7 @@ notebooks:
 | Release date | 2026-06-02 |
 | Deployment regions | See [Speech service regions](https://learn.microsoft.com/azure/ai-services/speech-service/regions?tabs=llmspeech) — LLM Speech is available in a subset of Speech regions |
 
-See [models/quickstart/](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry project setup.
+See [models/quickstart/](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry project setup.
 
 **Required env variables:**
 
@@ -124,4 +124,4 @@ naming the model is enough to turn enhanced mode on.
 - [Introducing MAI-Transcribe-1.5](https://microsoft.ai/news/mai-transcribe-1-5more-accurate-context-aware-and-built-for-production/) — release announcement: 43-language coverage, throughput, and keyword-biasing results.
 - [MAI-Transcribe-1.5 model page](https://microsoft.ai/models/mai-transcribe-1-5/) — benchmark comparison against MAI-Transcribe-1 and pricing per audio hour.
 - [MAI-Transcribe-1.5 model card (PDF)](https://microsoft.ai/pdf/MAI-Transcribe-1.5-Model-Card.PDF) — intended uses, evaluation methodology, and responsible-AI considerations.
-- [Audio / Speech primer](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/audio-speech.md) — background on transcription and speech capabilities on Foundry.
+- [Audio / Speech primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/audio-speech.md) — background on transcription and speech capabilities on Foundry.

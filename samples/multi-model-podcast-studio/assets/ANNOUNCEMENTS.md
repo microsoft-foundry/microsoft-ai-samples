@@ -2,7 +2,7 @@
 
 New models on Microsoft Foundry, newest first. Select a date to read the announcement, a model to open its card, or a publisher to browse its catalog.
 
-Want to run a model? Open its notebooks in [CAPSULES](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/CAPSULES.md). New to a capability tag? Start with the [primers](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/README.md#learn-about-model-capabilities).
+Want to run a model? Open its notebooks in [CAPSULES](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/CAPSULES.md). New to a capability tag? Start with the [primers](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/README.md#learn-about-model-capabilities).
 
 ## October 2026
 

@@ -30,9 +30,9 @@ notebooks:
 
 # MAI-Image-2.5 Publisher — Scenario
 
-> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [nitya/model-releases](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/multi-model-scenarios/mai-image-family-walkthrough). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/nitya/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
+> Originally created by [Nitya Narasimhan](https://github.com/nitya) in [microsoft-foundry/model-releases](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/multi-model-scenarios/mai-image-family-walkthrough). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
 
-**Publisher:** [Microsoft AI](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/README.md) · **Capability:** Image Generation
+**Publisher:** [Microsoft AI](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/README.md) · **Capability:** Image Generation
 
 The three MAI-Image-2.5 variants overlap enough that picking one is a real decision. This scenario runs all three against realistic tasks in a single notebook, so you can see where the differences actually show up.
 
@@ -43,7 +43,7 @@ The three MAI-Image-2.5 variants overlap enough that picking one is a real decis
 | Capsules covered | [MAI-Image-2.5](../mai-image-generate-and-edit/) · [MAI-Image-2.5-Flash](../mai-image-flash-batch-generation/) · [MAI-Image-2.5-Pro](../mai-image-pro-portraits-and-text/) |
 | Deployments needed | All three, in the same Foundry project |
 
-See [models/quickstart/](https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry project setup.
+See [models/quickstart/](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/quickstart/README.md) for first-time Foundry project setup.
 
 **Required env variables:**
 

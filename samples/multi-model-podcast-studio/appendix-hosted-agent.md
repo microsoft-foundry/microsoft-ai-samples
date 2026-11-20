@@ -102,7 +102,7 @@ flowchart TB
 | Item | Proposal |
 |---|---|
 | Account and container | A storage account in the same region, with a private container named `episodes` |
-| Layout | `episodes/<yyyy-mm-dd>/<family>-<slug>/drafts/episode.mp4`, then `.https://github.com/nitya/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/multi-model-scenarios/published/episode.mp4` after approval |
+| Layout | `episodes/<yyyy-mm-dd>/<family>-<slug>/drafts/episode.mp4`, then `episodes/<yyyy-mm-dd>/<family>-<slug>/published/episode.mp4` after approval |
 | Companions | `captions.vtt`, `deck.json` with the cited sources, `thumbnail.png`, and `run.json` with model versions, token counts, and timings |
 | Access | Give the agent's identity the **Storage Blob Data Contributor** role on the container. The docs say to assign roles for our own storage. Add **Storage Blob Delegator** if the agent issues user-delegation SAS links |
 | Sharing | Return a short-lived user-delegation SAS link, and don't make the container public |
