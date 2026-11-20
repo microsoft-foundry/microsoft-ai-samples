@@ -3,12 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://microsoft.ai/models/mai-image-2-6/"><img src="https://img.shields.io/badge/MAI--Image-2.6-F06B5C?style=flat-square" alt="MAI-Image-2.6" /></a>&nbsp;&nbsp;
-  <a href="https://microsoft.ai/models/mai-voice-2-1/"><img src="https://img.shields.io/badge/MAI--Voice-2.1-5FA463?style=flat-square" alt="MAI-Voice-2.1" /></a>&nbsp;&nbsp;
-  <a href="https://microsoft.ai/models/mai-transcribe-2/"><img src="https://img.shields.io/badge/MAI--Transcribe-2-9B7FD4?style=flat-square" alt="MAI-Transcribe-2" /></a>&nbsp;&nbsp;
-  <a href="https://microsoft.ai/models/mai-code-1-flash/"><img src="https://img.shields.io/badge/MAI--Code-1.1--Flash-72A7FF?style=flat-square" alt="MAI-Code-1.1-Flash" /></a>&nbsp;&nbsp;
-  <a href="https://microsoft.ai/models/mai-cyber-1-1-flash/"><img src="https://img.shields.io/badge/MAI--Cyber-1.1--Flash-E8A0BF?style=flat-square" alt="MAI-Cyber-1.1-Flash" /></a>&nbsp;&nbsp;
-  <a href="https://microsoft.ai/models/mai-thinking-1/"><img src="https://img.shields.io/badge/MAI--Thinking-1-F2B33D?style=flat-square" alt="MAI-Thinking-1" /></a>
+  <a href="https://microsoft.ai/models/mai-image-2-7/"><img src="https://img.shields.io/badge/MAI_Image-2.7-F06B5C?style=flat-square" alt="MAI Image 2.7" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-voice-2/"><img src="https://img.shields.io/badge/MAI_Voice-2.1-5FA463?style=flat-square" alt="MAI Voice 2.1" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-transcribe-2/"><img src="https://img.shields.io/badge/MAI_Transcribe-2-9B7FD4?style=flat-square" alt="MAI Transcribe 2" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-realtime-1/"><img src="https://img.shields.io/badge/MAI_Realtime-1-3FB8AF?style=flat-square" alt="MAI Realtime 1" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-code-2/"><img src="https://img.shields.io/badge/MAI_Code-2-72A7FF?style=flat-square" alt="MAI Code 2" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-cyber-2-flash/"><img src="https://img.shields.io/badge/MAI_Cyber-2_Flash-E8A0BF?style=flat-square" alt="MAI Cyber 2 Flash" /></a>&nbsp;&nbsp;
+  <a href="https://microsoft.ai/models/mai-thinking-1/"><img src="https://img.shields.io/badge/MAI_Thinking-1-F2B33D?style=flat-square" alt="MAI Thinking 1" /></a>
 </p>
 
 ---
@@ -23,17 +24,17 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 
 | Type | Name | What you'll build | MAI models |
 | --- | --- | --- | --- |
-| Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI-Voice-2.1, MAI-Transcribe-2, MAI-Code Flash |
-| Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI-Voice-2.1, MAI-Voice-2.1-Flash |
-| Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI-Transcribe-2 |
+| Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI Voice 2.1, MAI Transcribe 2, MAI Code Flash |
+| Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI Voice 2.1, MAI Voice 2.1 Flash |
+| Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI Transcribe 2 |
 | Sample | [Image generation and editing with MAI-Image](samples/mai-image-generate-and-edit/) | Images from text prompts at different sizes, then edits to an existing image | MAI-Image-2.5 |
 | Sample | [Fast batch image generation with MAI-Image Flash](samples/mai-image-flash-batch-generation/) | Image batches with throughput and cost estimates, concurrent requests, background variations and mood boards | MAI-Image-2.5-Flash |
 | Sample | [Portraits and in-image text with MAI-Image Pro](samples/mai-image-pro-portraits-and-text/) | High-fidelity portraits, accurate in-image text and complex scenes | MAI-Image-2.5-Pro |
 | Sample | [Compare the MAI-Image family](samples/mai-image-compare-model-family/) | Side-by-side Flash, base and Pro results for listings, mood boards, edits and character consistency | MAI-Image-2.5, -Flash, -Pro |
 | Sample | [Multilingual transcription with keyword biasing](samples/mai-transcribe-multilingual-keyword-biasing/) | Filler-word removal, keyword biasing and multilingual transcripts, plus a word-error-rate vs noise benchmark | MAI-Transcribe-1.5 |
-| Sample | [Speaker-aware transcription in noisy audio](samples/mai-transcribe-diarization-and-noise/) | Diarized transcripts with timestamps, tested at rising noise levels and compared with 1.5 | MAI-Transcribe-2, MAI-Transcribe-1.5 |
+| Sample | [Speaker-aware transcription in noisy audio](samples/mai-transcribe-diarization-and-noise/) | Diarized transcripts with timestamps, tested at rising noise levels and compared with 1.5 | MAI Transcribe 2, MAI-Transcribe-1.5 |
 | Sample | [Expressive and multilingual speech](samples/mai-voice-expressive-multilingual-speech/) | Styled SSML delivery, locale voices, code-switching and long-form narration | MAI-Voice-2 |
-| Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI-Voice-2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI-Transcribe-2 (+ Microsoft-Decision-1, GPT-6 Sol) |
+| Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI Voice 2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI Transcribe 2 (+ Microsoft-Decision-1, GPT-6 Sol) |
 | Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
 
 More notebooks and workshops will be added as they become available.
@@ -63,7 +64,7 @@ The [`assets/`](assets/) folder holds images and other files used by repository 
 
 | Developer goal | Where | How to access |
 | --- | --- | --- |
-| Code with MAI | [GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models) | Select an available MAI coding model in Copilot's model picker. Availability depends on your plan, Copilot surface, and organization policies. |
+| Code with MAI | [GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models) | Select an available MAI coding model ([MAI Code 2](https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf) or [MAI Code 2 Flash](https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf)) in Copilot's model picker. Availability depends on your plan, Copilot surface, and organization policies. |
 | Build an app on Azure | [Microsoft Foundry](https://ai.azure.com/) / [Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) | Use your Azure subscription to set up a supported model or service, authenticate, and call its API. Start with the [reasoning](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-thinking), [image](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image), or [voice](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) guide. |
 | Build an app through a unified third-party API | [OpenRouter](https://openrouter.ai/microsoft/) | Create an OpenRouter API key, choose a listed MAI model ID, and follow that model's API guide. |
 

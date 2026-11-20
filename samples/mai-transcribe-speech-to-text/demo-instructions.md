@@ -1,4 +1,4 @@
-# MAI-Transcribe-2: demo instructions
+# MAI Transcribe 2: demo instructions
 
 [Model introduction](README.md) | [Extended information](information.md) | [Notebook](demo.ipynb)
 
@@ -84,7 +84,7 @@ Do not disable TLS certificate verification to work around SSL issues.
 
 ## Azure access and authentication
 
-You need an Azure Speech/Foundry resource with access to MAI-Transcribe-2 in a
+You need an Azure Speech/Foundry resource with access to MAI Transcribe 2 in a
 [supported region](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions?tabs=llmspeech).
 The notebook uses the `2025-10-15` fast-transcription API and explicitly selects
 `MAI-Transcribe-2`. This surface is not available on the Speech F0 tier.
@@ -187,7 +187,7 @@ not as six unrelated recognition tests:
 | Notebook scene | What to show |
 | --- | --- |
 | Listen to the recorded episode | Identify a handoff, a hesitation, and a name to revisit |
-| Make the first transcript | One explicit MAI-Transcribe-2 request, with verbatim text and metadata |
+| Make the first transcript | One explicit MAI Transcribe 2 request, with verbatim text and metadata |
 | Follow the hosts | Compare anonymous speaker labels with what you actually hear; do not assume speaker 0 is Henk |
 | Revisit an editorial question | Use a word timestamp to replay a name or correction without another API call |
 | Prepare the episode-page draft | Compare clean and verbatim on the same audio; clean is not a summary |

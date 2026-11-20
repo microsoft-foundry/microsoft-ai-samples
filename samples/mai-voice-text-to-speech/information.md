@@ -1,4 +1,4 @@
-# MAI-Voice-2.1: from a script to a voice
+# MAI Voice 2.1: from a script to a voice
 
 [Model introduction](README.md) | [Podcast notebook](demo.ipynb) | [Setup instructions](demo-instructions.md)
 
@@ -11,10 +11,10 @@ to make a conversation feel alive. When another host joins, the voices need to
 remain distinct. When the show welcomes a different audience, the same
 identity should still be recognizable in another language.
 
-MAI-Voice-2.1 is Microsoft's text-to-speech model for this kind of expressive
+MAI Voice 2.1 is Microsoft's text-to-speech model for this kind of expressive
 generation. It turns a supplied script into audio, with prebuilt voices,
 voice-specific speaking styles, multilingual synthesis, and an approved
-personal-voice workflow. MAI-Voice-2.1-Flash shares the broad feature set while
+personal-voice workflow. MAI Voice 2.1 Flash shares the broad feature set while
 prioritizing responsiveness.
 
 Both are currently **public preview**, provided without an SLA and not
@@ -37,7 +37,7 @@ The [official guide][guide] is the starting point for the current service.
 
 ## Two models, different production priorities
 
-| | MAI-Voice-2.1 | MAI-Voice-2.1-Flash |
+| | MAI Voice 2.1 | MAI Voice 2.1 Flash |
 | --- | --- | --- |
 | Main emphasis | Expressive, high-fidelity generation and long-form consistency | Low-latency, responsive generation |
 | Typical use | Narration, podcasts, educational content, voiceovers | Assistants, interactive experiences, call-center/IVR output |
@@ -78,7 +78,7 @@ handling, playback, and usually a language model. Azure Voice Live can provide
 that larger integration. A notebook that downloads a WAV and displays an audio
 player demonstrates completed-file TTS, not a full streaming voice agent.
 
-The reviewed public sources do not establish downloadable MAI-Voice-2.1 weights,
+The reviewed public sources do not establish downloadable MAI Voice 2.1 weights,
 a self-hosted runtime, parameter counts, a reproducible training recipe, or
 hardware requirements for local inference. The integration here is a hosted
 Azure service.

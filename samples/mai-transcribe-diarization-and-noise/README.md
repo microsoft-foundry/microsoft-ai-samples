@@ -15,14 +15,14 @@ dependencies: [azure-ai-transcription, azure-identity]
 domains: [contact-center, healthcare, media-captioning, meetings, accessibility]
 notebooks:
   - path: mai-transcribe-2.ipynb
-    title: "Speaker-aware transcription and MAI-Transcribe-1.5 comparison with MAI-Transcribe-2"
+    title: "Speaker-aware transcription and MAI-Transcribe-1.5 comparison with MAI Transcribe 2"
     concepts:
       - speaker-aware transcription with timestamps and controlled noise levels
       - multilingual transcription and domain vocabulary biasing
       - controlled comparison with MAI-Transcribe-1.5
 ---
 
-# MAI-Transcribe-2 — Release Capsule
+# MAI Transcribe 2 — Release Capsule
 
 > Originally created by [Nitya Narasimhan](https://github.com/nitya) in [microsoft-foundry/model-releases](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft-ai/mai-transcribe-2). Setup steps that mention `scripts/` or the quickstart use [that repo's setup scripts](https://github.com/microsoft-foundry/model-releases/tree/e2d0f011d2f735ae018cfbd61a43393e0b992380/scripts); you can also create the Foundry deployments in the portal and fill in `.env` from `.env.example`.
 
@@ -34,8 +34,8 @@ notebooks:
 
 | Detail | Value |
 |---|---|
-| Model card | [MAI-Transcribe-2 — Foundry catalog](https://ai.azure.com/catalog/models/MAI-Transcribe-2) |
-| Announcement | [Introducing MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) |
+| Model card | [MAI Transcribe 2 — Foundry catalog](https://ai.azure.com/catalog/models/MAI-Transcribe-2) |
+| Announcement | [Introducing MAI Transcribe 2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) |
 | Pricing | $0.10 per hour for a limited time; standard price $0.36 per hour — [source](https://microsoft.ai/models/mai-transcribe-2/) |
 | Release date | 2026-09-03 |
 | Deployment regions | See [Speech service regions](https://learn.microsoft.com/azure/ai-services/speech-service/regions?tabs=llmspeech) — LLM Speech is available in a subset of Speech regions |
@@ -55,7 +55,7 @@ Optional overrides:
 AZURE_SPEECH_ENDPOINT        # use when your Speech resource differs from the Foundry project resource
 ```
 
-> MAI-Transcribe-2 needs **no deployment name**. Select the model by passing `MAI-Transcribe-2`
+> MAI Transcribe 2 needs **no deployment name**. Select the model by passing `MAI-Transcribe-2`
 > in the request's `enhancedMode` block.
 
 ## Notebook
@@ -64,9 +64,9 @@ AZURE_SPEECH_ENDPOINT        # use when your Speech resource differs from the Fo
 |---|---|
 | [mai-transcribe-2.ipynb](mai-transcribe-2.ipynb) | Speaker diarization and word timestamps · Multilingual and controlled noise-level transcription · Domain vocabulary biasing · Controlled comparison with MAI-Transcribe-1.5 |
 
-## What MAI-Transcribe-2 provides
+## What MAI Transcribe 2 provides
 
-MAI-Transcribe-2 is a multilingual speech recognition model for noisy and real-world audio.
+MAI Transcribe 2 is a multilingual speech recognition model for noisy and real-world audio.
 It supports:
 
 - **60 languages** with automatic language identification and code switching
@@ -128,8 +128,8 @@ one language.
 
 ## References
 
-- [MAI-Transcribe-2 model page](https://microsoft.ai/models/mai-transcribe-2/) — features, language coverage, benchmarks, and current pricing.
-- [MAI-Transcribe-2 announcement](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) — release context and comparative accuracy results.
+- [MAI Transcribe 2 model page](https://microsoft.ai/models/mai-transcribe-2/) — features, language coverage, benchmarks, and current pricing.
+- [MAI Transcribe 2 announcement](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) — release context and comparative accuracy results.
 - [MAI-Transcribe in Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/mai-transcribe?context=%2Fazure%2Ffoundry%2Fcontext%2Fcontext&pivots=ai-foundry) — REST parameters, language support, diarization, timestamps, transcript styles, and limitations.
 - [LLM Speech for speech transcription and translation](https://learn.microsoft.com/azure/ai-services/speech-service/llm-speech?tabs=new-foundry%2Cwindows&pivots=programming-language-python) — authentication, the `azure-ai-transcription` SDK, and response handling.
 - [Speech service regions](https://learn.microsoft.com/azure/ai-services/speech-service/regions?tabs=llmspeech) — current region and endpoint guidance.

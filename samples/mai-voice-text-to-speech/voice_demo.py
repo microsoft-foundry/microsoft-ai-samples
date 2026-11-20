@@ -148,7 +148,7 @@ def _profile_id(value):
 
 def ssml(turns: Sequence[Turn], model=MODEL):
     if model not in PRICES:
-        raise DemoError("Select MAI-Voice-2.1 or MAI-Voice-2.1-Flash explicitly.")
+        raise DemoError("Select MAI Voice 2.1 or MAI Voice 2.1 Flash explicitly.")
     if not turns or len(turns) > 50:
         raise DemoError("Supply between 1 and 50 spoken turns.")
     if sum(len(_text(t.text)) for t in turns) > MAX_TEXT:

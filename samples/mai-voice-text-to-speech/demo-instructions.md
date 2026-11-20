@@ -1,4 +1,4 @@
-# MAI-Voice-2.1: demo instructions
+# MAI Voice 2.1: demo instructions
 
 [Model introduction](README.md) | [Extended information](information.md) | [Notebook](demo.ipynb)
 

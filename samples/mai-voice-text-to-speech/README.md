@@ -1,9 +1,9 @@
-# MAI-Voice-2.1
+# MAI Voice 2.1
 
 > Originally created by [Henk Boelman](https://github.com/hnky) in [hnky/mai-demos](https://github.com/hnky/mai-demos/tree/main/MAI-Voice-2.1) for the *A Bit of AI* podcast demos.
 
-**MAI-Voice-2.1** turns text into natural, expressive speech across 23 languages.
-**MAI-Voice-2.1-Flash** offers a lower-latency alternative. Both provide prebuilt
+**MAI Voice 2.1** turns text into natural, expressive speech across 23 languages.
+**MAI Voice 2.1 Flash** offers a lower-latency alternative. Both provide prebuilt
 voices, voice-specific speaking styles, and gated personal voice cloning through
 Azure Speech. Both models are currently **public preview**, without an SLA.
 
@@ -16,7 +16,7 @@ Create the opening of **A Bit of AI**, a podcast hosted by Henk and Amy:
 1. Give Amy's welcome a voice.
 2. Direct the delivery: neutral, excited, or whispering.
 3. Welcome listeners in English and Dutch.
-4. Compare MAI-Voice-2.1 with Flash using the same podcast excerpt.
+4. Compare MAI Voice 2.1 with Flash using the same podcast excerpt.
 5. Produce the Henk-Amy opening conversation.
 6. Optionally clone your own consented voice, starting with prerecorded reference and consent
    files, then synthesize a short welcome through step-by-step code.
@@ -52,7 +52,7 @@ saved outputs, embedded audio, credentials, or personal profile IDs.
 ## Learn more
 
 - [Official MAI voices guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices)
-- [MAI-Voice-2.1 model page](https://microsoft.ai/models/mai-voice-2-1/)
+- [MAI Voice 2.1 model page](https://microsoft.ai/models/mai-voice-2-1/)
 - [Azure Speech regions](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions?tabs=tts)
 - [Speech pricing](https://azure.microsoft.com/en-us/pricing/details/speech/)
 - [Personal voice and access requirements](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/personal-voice-overview)

@@ -1,8 +1,8 @@
-# MAI-Transcribe-2
+# MAI Transcribe 2
 
 > Originally created by [Henk Boelman](https://github.com/hnky) in [hnky/mai-demos](https://github.com/hnky/mai-demos/tree/main/MAI-Transcribe-2) for the *A Bit of AI* podcast demos.
 
-**MAI-Transcribe-2** is Microsoft's speech-to-text model for turning recordings
+**MAI Transcribe 2** is Microsoft's speech-to-text model for turning recordings
 into transcripts across 60 languages. It supports speaker diarization,
 word-level timestamps, clean and verbatim output, and keyword hints for
 specialized vocabulary.
@@ -47,17 +47,17 @@ files when executed. Keywords and the Dutch clip's path are edited in their own
 examples, not in a separate settings block.
 
 For realtime captions, see the separate
-[MAI-Transcribe-2-Streaming demo](https://github.com/hnky/mai-demos/tree/main/MAI-Transcribe-2-Streaming).
+[MAI Transcribe 2 Streaming demo](https://github.com/hnky/mai-demos/tree/main/MAI-Transcribe-2-Streaming).
 It has its own notebook, requirements, and connection settings; this demo does
 not import or run it.
 
 ## Learn more
 
-- [MAI-Transcribe-2 documentation and API examples](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
+- [MAI Transcribe 2 documentation and API examples](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe)
 - [Fast transcription API guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/fast-transcription-create)
 - [Supported Azure Speech regions](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/regions?tabs=llmspeech)
-- [MAI-Transcribe-2 model card](https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf)
+- [MAI Transcribe 2 model card](https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf)
 - [Microsoft Foundry Speech-to-text playground](https://aka.ms/foundry-speech-to-text)
-- [MAI-Transcribe-2-Streaming Realtime guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe-2-streaming-realtime)
+- [MAI Transcribe 2 Streaming Realtime guide](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe-2-streaming-realtime)
 
 [All samples](../../README.md)

@@ -1,7 +1,7 @@
 <!-- Copyright (c) Microsoft Corporation.
      Licensed under the MIT License. -->
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="One Microsoft Foundry resource, three doors. Your code signs in with a keyless Microsoft Entra token. Door 1: the MAI image API at the services.ai.azure.com address, for MAI-Image-2.6 and Flash deployments. Door 2: the Speech SDK at the cognitiveservices.azure.com address, for MAI-Voice-2.1 and Flash, chosen in SSML. Door 3: the Speech transcription REST API, for MAI-Transcribe-2, chosen in the request definition. Outside your resource: MAI-Code-1.1-Flash in GitHub Copilot, MAI-Thinking-1 in the Foundry catalog, and MAI-Cyber-1.1-Flash through MDASH.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="One Microsoft Foundry resource, three doors. Your code signs in with a keyless Microsoft Entra token. Door 1: the MAI image API at the services.ai.azure.com address, for MAI-Image-2.6 and Flash deployments. Door 2: the Speech SDK at the cognitiveservices.azure.com address, for MAI Voice 2.1 and Flash, chosen in SSML. Door 3: the Speech transcription REST API, for MAI Transcribe 2, chosen in the request definition. Outside your resource: MAI-Code-1.1-Flash in GitHub Copilot, MAI Thinking 1 in the Foundry catalog, and MAI-Cyber-1.1-Flash through MDASH.">
   <title>One Foundry resource, three doors</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -53,13 +53,13 @@
 
     <!-- door 2 -->
     <rect x="650" y="250" width="500" height="100" rx="14" fill="#5FA463" fill-opacity="0.16" stroke="#5FA463" stroke-opacity="0.8"/>
-    <text x="672" y="280" font-size="17" font-weight="700" fill="#fff">② Voice · MAI-Voice-2.1 / Flash</text>
+    <text x="672" y="280" font-size="17" font-weight="700" fill="#fff">② Voice · MAI Voice 2.1 / Flash</text>
     <text x="672" y="305" font-size="13" fill="#d0dfef">Speech SDK · SSML · nothing to deploy</text>
     <text x="672" y="327" font-size="13" fill="#d0dfef">&lt;voice name="en-US-Harper:MAI-Voice-2.1"&gt;</text>
 
     <!-- door 3 -->
     <rect x="650" y="370" width="500" height="100" rx="14" fill="#9B7FD4" fill-opacity="0.16" stroke="#9B7FD4" stroke-opacity="0.8"/>
-    <text x="672" y="400" font-size="17" font-weight="700" fill="#fff">③ Transcribe · MAI-Transcribe-2</text>
+    <text x="672" y="400" font-size="17" font-weight="700" fill="#fff">③ Transcribe · MAI Transcribe 2</text>
     <text x="672" y="425" font-size="13" fill="#d0dfef">REST · POST /speechtotext/transcriptions:transcribe</text>
     <text x="672" y="447" font-size="13" fill="#d0dfef">definition.enhancedMode.model = "MAI-Transcribe-2"</text>
 
@@ -72,7 +72,7 @@
     <rect x="48" y="534" width="350" height="44" rx="10" fill="#72A7FF" fill-opacity="0.14" stroke="#72A7FF" stroke-opacity="0.6"/>
     <text x="64" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Code-1.1-Flash</tspan> · GitHub Copilot</text>
     <rect x="420" y="534" width="350" height="44" rx="10" fill="#F2B33D" fill-opacity="0.14" stroke="#F2B33D" stroke-opacity="0.6"/>
-    <text x="436" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Thinking-1</tspan> · Foundry (preview)</text>
+    <text x="436" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI Thinking 1</tspan> · Foundry (preview)</text>
     <rect x="792" y="534" width="358" height="44" rx="10" fill="#E8A0BF" fill-opacity="0.14" stroke="#E8A0BF" stroke-opacity="0.6"/>
     <text x="808" y="562" font-size="14" fill="#fff"><tspan font-weight="700">MAI-Cyber-1.1-Flash</tspan> · MDASH only</text>
   </g>

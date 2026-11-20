@@ -81,8 +81,8 @@ flowchart TB
     E{{"Microsoft-Decision-1<br/>is every slide supported<br/>by the paragraphs it cites?"}}:::ms
     H["A person decides<br/>edit, redraft, or drop"]:::human
     ART["MAI-Image-2.6-Flash<br/>slide art<br/>MAI-Image-2.6 for the cover"]:::mai
-    VOICE["MAI-Voice-2.1<br/>narration"]:::mai
-    TR["MAI-Transcribe-2<br/>captions and slide timing"]:::mai
+    VOICE["MAI Voice 2.1<br/>narration"]:::mai
+    TR["MAI Transcribe 2<br/>captions and slide timing"]:::mai
     CODE["GPT-6 Sol<br/>writes the player page<br/>once, from the deck format"]:::oai
     REV{{"Microsoft-Decision-1<br/>is this code safe to run?"}}:::ms
     OUT["Narrated deck<br/>audio · slides · captions · sources"]:::out
@@ -122,8 +122,8 @@ Each model has one job, picked for what the job needs.
 | Check each slide against its source | [Microsoft-Decision-1](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | A choice of supported, contradicted, or cannot tell, as in [notebook 03](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/03-guard-and-grade-the-ops-copilot.ipynb) of that capsule |
 | Slide art | [MAI-Image-2.6-Flash](https://ai.azure.com/catalog/models/MAI-Image-2.6-Flash) | MAI | Faster, for many images |
 | Cover art | [MAI-Image-2.6](https://ai.azure.com/catalog/models/MAI-Image-2.6) | MAI | The full model, for the one image people see first |
-| Narration | [MAI-Voice-2.1](https://ai.azure.com/catalog/models/MAI-Voice-2.1) | MAI | Expressive speech, with two prebuilt hosts |
-| Captions and slide timing | [MAI-Transcribe-2](../mai-transcribe-diarization-and-noise/README.md) | MAI | Word timestamps and speaker labels |
+| Narration | [MAI Voice 2.1](https://ai.azure.com/catalog/models/MAI-Voice-2.1) | MAI | Expressive speech, with two prebuilt hosts |
+| Captions and slide timing | [MAI Transcribe 2](../mai-transcribe-diarization-and-noise/README.md) | MAI | Word timestamps and speaker labels |
 | Write the player page | [GPT-6 Sol](https://ai.azure.com/catalog/models/gpt-6-sol) | OpenAI | Front-end code is generated text, so the same model that drafts the slides can write it |
 | Review the generated code | [Microsoft-Decision-1](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) | Microsoft | Yes-or-no questions about what the code does |
 
@@ -193,7 +193,7 @@ models. Name each deployment for its job:
 ./scripts/3-deploy-model.sh cover-art    MAI-Image-2.6        --env-var AZURE_COVER_ART_DEPLOYMENT
 ```
 
-MAI-Voice-2.1 and MAI-Transcribe-2 are called through Azure Speech with the project key, so they need no
+MAI Voice 2.1 and MAI Transcribe 2 are called through Azure Speech with the project key, so they need no
 deployment. GPT-6 Sol also writes the player page, so it needs no extra deployment. The scenario ships a
 reference player. The generated page is compared with it, and the notebook falls back to it if the generated
 code fails the review.
@@ -218,8 +218,8 @@ Prices below are from the model cards on 2026-10-12. Check them again before bud
 
 | Piece | Rate | For one 3-minute episode |
 |---|---|---|
-| Narration, MAI-Voice-2.1 | $22 per 1M characters | about 2,700 characters, so about $0.06 |
-| Captions, MAI-Transcribe-2 | $0.10 per hour early-bird, and $0.36 per hour at the standard rate | about $0.005 to $0.02 |
+| Narration, MAI Voice 2.1 | $22 per 1M characters | about 2,700 characters, so about $0.06 |
+| Captions, MAI Transcribe 2 | $0.10 per hour early-bird, and $0.36 per hour at the standard rate | about $0.005 to $0.02 |
 | Images, MAI-Image-2.6 and Flash | Per token. The cards point to the pricing page and don't list a rate | The response reports the tokens. In our tests a 1024×1024 image used 1,024 output tokens on both models |
 | Slides and the player page, GPT-6 Sol | Per token | Depends on the post length, and the notebook prints the tokens used |
 | Checks, Microsoft-Decision-1 | Per token | Short requests, and the notebook prints the tokens used |
@@ -291,7 +291,7 @@ Azure Storage, and for an alternative built from several agents that talk over t
 - [Audio / Speech primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/audio-speech.md) — speech synthesis and transcription background.
 - [Image generation primer](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/docs/primers/image-generation.md) — what the image models take in and return.
 - [Microsoft-Decision-1 capsule](https://github.com/microsoft-foundry/model-releases/blob/e2d0f011d2f735ae018cfbd61a43393e0b992380/models/microsoft/microsoft-decision-1/README.md) — the question types and the grounding pattern used here.
-- [MAI-Transcribe-2 capsule](../mai-transcribe-diarization-and-noise/README.md) — speaker labels, word timestamps, and phrase lists.
+- [MAI Transcribe 2 capsule](../mai-transcribe-diarization-and-noise/README.md) — speaker labels, word timestamps, and phrase lists.
 - [Deploy and use Microsoft-Decision-1](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision) — official request and response shapes.
 - [MAI voices in Azure Speech](https://learn.microsoft.com/azure/ai-services/speech-service/mai-voices) — prebuilt voices, styles, and gated features.
 - [Deploy and use MAI image models in Microsoft Foundry](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image?tabs=python) — the image generation API and its limits.
