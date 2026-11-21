@@ -22,13 +22,13 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 
 ## Featured samples and workshops
 
-| # | Type | Name | What you'll build | MAI models |
-| --- | --- | --- | --- | --- |
-| 1 | Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI Voice 2.1, MAI Transcribe 2, MAI Code Flash |
-| 2 | Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI Voice 2.1, MAI Voice 2.1 Flash |
-| 3 | Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI Transcribe 2 |
-| 4 | Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI Voice 2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI Transcribe 2 (+ Microsoft-Decision-1, GPT-6 Sol) |
-| 5 | Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
+| Type | Name | What you'll build | MAI models |
+| --- | --- | --- | --- |
+| Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI Voice 2.1, MAI Transcribe 2, MAI Code Flash |
+| Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI Voice 2.1, MAI Voice 2.1 Flash |
+| Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI Transcribe 2 |
+| Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI Voice 2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI Transcribe 2 (+ Microsoft-Decision-1, GPT-6 Sol) |
+| Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
 
 Find the rest of the catalog in [`samples/`](samples/), [`workshops/`](workshops/), and [`data/`](data/). More notebooks and workshops will be added as they become available.
 
