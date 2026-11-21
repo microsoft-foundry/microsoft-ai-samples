@@ -18,24 +18,17 @@ Code samples and reusable assets to help you build with **Microsoft AI (MAI) mod
 
 Explore practical developer scenarios through runnable code, notebooks, and hands-on workshops. Each sample calls a MAI model deployment to demonstrate model capabilities, with step-by-step setup instructions you can follow, learn from, and adapt for your own projects.
 
-## What's available
+## Featured samples and workshops
 
 | Type | Name | What you'll build | MAI models |
 | --- | --- | --- | --- |
 | Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI Voice 2.1, MAI Transcribe 2, MAI Code Flash |
 | Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI Voice 2.1, MAI Voice 2.1 Flash |
 | Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI Transcribe 2 |
-| Sample | [Image generation and editing with MAI-Image](samples/mai-image-generate-and-edit/) | Images from text prompts at different sizes, then edits to an existing image | MAI-Image-2.5 |
-| Sample | [Fast batch image generation with MAI-Image Flash](samples/mai-image-flash-batch-generation/) | Image batches with throughput and cost estimates, concurrent requests, background variations and mood boards | MAI-Image-2.5-Flash |
-| Sample | [Portraits and in-image text with MAI-Image Pro](samples/mai-image-pro-portraits-and-text/) | High-fidelity portraits, accurate in-image text and complex scenes | MAI-Image-2.5-Pro |
-| Sample | [Compare the MAI-Image family](samples/mai-image-compare-model-family/) | Side-by-side Flash, base and Pro results for listings, mood boards, edits and character consistency | MAI-Image-2.5, -Flash, -Pro |
-| Sample | [Multilingual transcription with keyword biasing](samples/mai-transcribe-multilingual-keyword-biasing/) | Filler-word removal, keyword biasing and multilingual transcripts, plus a word-error-rate vs noise benchmark | MAI-Transcribe-1.5 |
-| Sample | [Speaker-aware transcription in noisy audio](samples/mai-transcribe-diarization-and-noise/) | Diarized transcripts with timestamps, tested at rising noise levels and compared with 1.5 | MAI Transcribe 2, MAI-Transcribe-1.5 |
-| Sample | [Expressive and multilingual speech](samples/mai-voice-expressive-multilingual-speech/) | Styled SSML delivery, locale voices, code-switching and long-form narration | MAI-Voice-2 |
 | Sample | [Multi-model podcast studio](samples/multi-model-podcast-studio/) | Narrated, source-checked decks and podcasts generated from model release announcements | MAI Voice 2.1, MAI-Image-2.6, MAI-Image-2.6-Flash, MAI Transcribe 2 (+ Microsoft-Decision-1, GPT-6 Sol) |
 | Dataset | [Contoso Retail](data/contoso-retail/) | Shared product catalog (20 products, manuals, photos) for retail scenarios | — |
 
-More notebooks and workshops will be added as they become available.
+Find the rest of the catalog in [`samples/`](samples/), [`workshops/`](workshops/), and [`data/`](data/). More notebooks and workshops will be added as they become available.
 
 ## Repository structure
 
