@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/mai-developer-samples-banner.svg" alt="Microsoft AI (MAI) Developer Samples — Build with MAI models. Learn by doing." width="100%">
-</p>
+![Microsoft AI (MAI) Developer Samples — Build with MAI models. Learn by doing.](.github/skills/create-mai-svg-banners/art/examples/repo-readme-banner.svg)
 
 <p align="center">
   <a href="https://microsoft.ai/models/mai-image-2-7/"><img src="https://img.shields.io/badge/MAI_Image-2.7-F06B5C?style=flat-square" alt="MAI Image 2.7" /></a>&nbsp;&nbsp;
