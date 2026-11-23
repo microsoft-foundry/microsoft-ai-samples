@@ -94,7 +94,7 @@ This repository is under active preparation. The sample catalog and contribution
 
 ## Maintainers
 
-Maintained by **Microsoft Developer Relations (Cloud Advocacy)** in partnership with the **Microsoft AI (MAI) team**, and hosted in the [Microsoft Foundry GitHub organization](https://github.com/microsoft-foundry).
+Maintained by **Microsoft Developer Relations** in partnership with the **Microsoft AI (MAI) team**, and hosted in the [Microsoft Foundry GitHub organization](https://github.com/microsoft-foundry).
 
 ## Support and community
 
