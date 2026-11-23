@@ -22,6 +22,7 @@ Explore practical developer scenarios through runnable code, notebooks, and hand
 
 | Type | Name | What you'll build | MAI models |
 | --- | --- | --- | --- |
+| Sample | [Sketch to campaign](samples/mai-image-sketch-to-product/) | Product concepts, campaign scenes and branded social posts generated from sketches | MAI Image 2.7 Flash, MAI Image 2.7 |
 | Workshop | [Multimodal Product Launch](workshops/mai-multimodal-product-launch/) | A launch kit for a retail product: posters and ads, a radio spot, checked transcripts, and a new storefront | MAI-Image-2.6, MAI Voice 2.1, MAI Transcribe 2, MAI Code Flash |
 | Sample | [Text to speech with MAI-Voice](samples/mai-voice-text-to-speech/) | A podcast opening generated from a script, with voices, speaking styles and SSML | MAI Voice 2.1, MAI Voice 2.1 Flash |
 | Sample | [Speech to text with MAI-Transcribe](samples/mai-transcribe-speech-to-text/) | A podcast transcript with speaker diarization, word timestamps and keyword hints | MAI Transcribe 2 |

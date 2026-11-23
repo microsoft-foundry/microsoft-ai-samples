@@ -1,5 +1,7 @@
 # Sketch to campaign
 
+![Example output: an original sketch, a product concept and three branded campaign posts](examples/sketch-to-poc-to-social.png)
+
 This sample uses MAI Image 2.7 Flash and MAI Image 2.7 to turn sketches into
 product concepts, campaign scenes and branded social posts. Images in
 `examples` are reference examples only; new runs save their results in `outputs`.
